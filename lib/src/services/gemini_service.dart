@@ -23,7 +23,7 @@ class GeminiService extends ChangeNotifier {
       String.fromEnvironment('API_KEY', defaultValue: '');
 
   /// Default fast, lightweight free-tier model recommended for use
-  static const String defaultModel = 'gemini-3.1-flash-lite';
+  static const String defaultModel = 'gemini-3.5-flash-lite';
   static const String proModel = 'gemini-3.8-flash';
   static const String modelFlashLite = defaultModel;
   static const String modelFlash = proModel;
@@ -34,7 +34,6 @@ class GeminiService extends ChangeNotifier {
     proModel,
     'gemini-2.5-flash',
     'gemini-2.5-pro',
-    'gemini-2.5-flash-lite',
   ];
 
   String _apiKey = defaultEnvApiKey;
@@ -448,7 +447,7 @@ Do not include any markdown formatting like ```json or any other text. Just the 
       String rawText = '';
       if (hasCustomApiKey) {
         final suggestionModel = google_ai.GenerativeModel(
-          model: 'gemini-2.5-flash-lite',
+          model: defaultModel,
           apiKey: _apiKey.trim(),
         );
         final response = await suggestionModel.generateContent([

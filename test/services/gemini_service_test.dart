@@ -70,7 +70,7 @@ void main() {
     });
 
     test(
-        'currentModel defaults to gemini-3.1-flash-lite and setModel switches model',
+        'currentModel defaults to gemini-3.5-flash-lite and setModel switches model',
         () {
       final service = GeminiService.instance;
       expect(service.currentModel, GeminiService.modelFlashLite);

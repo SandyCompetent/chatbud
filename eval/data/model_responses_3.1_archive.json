@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "model": "gemini-3.1-flash-lite",
+    "temperature": 0.0,
+    "generated_at": "2026-11-23T13:56:18+00:00",
+    "prompt_template_sha256": "ea7d486c9d2a147823881256a19b24361dfbc56c11da50bee40be6d1b37b5ea9",
+    "note": "Golden ground-truth context was supplied to the model. Measures generation faithfulness, not retrieval."
+  },
+  "responses": {
+    "eval_api_001": {
+      "response": "The current ECB exchange rate is 1 EUR = 1.0845 USD."
+    },
+    "eval_api_002": {
+      "response": "The exchange rate is 1 GBP = 1.1680 EUR, as per the European Central Bank daily rates."
+    },
+    "eval_api_003": {
+      "response": "Hello! I am ChatBud AI. Based on the current data for London (51.5074 N, 0.1278 W), the weather is partly cloudy with a temperature of 14.2°C, 78% relative humidity, and a wind speed of 12 km/h."
+    },
+    "eval_api_004": {
+      "response": "Hello! I am ChatBud AI. Based on the current observation for Tokyo, the temperature is 19.5°C with a wind speed of 8 km/h and clear skies. The forecast indicates that temperatures will remain stable over the next 12 hours."
+    },
+    "eval_api_005": {
+      "response": "The authors of the paper *Attention Is All You Need* are Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin."
+    },
+    "eval_api_006": {
+      "response": "The BERT paper was published in 2019 and has over 85,000 academic citations in OpenAlex."
+    },
+    "eval_api_007": {
+      "response": "Hello! I am ChatBud AI. Based on the provided context, Flutter 3.24 was released on August 6, 2024, and is currently supported under active maintenance until the next minor or major release cycle."
+    },
+    "eval_api_008": {
+      "response": "Node.js 18 (Hydrogen) Maintenance LTS reached its end of life on April 30, 2025."
+    },
+    "eval_api_009": {
+      "response": "Python 3.9 is scheduled for End of Life in October 2025."
+    },
+    "eval_api_010": {
+      "response": "CVE-2024-3094 is related to a malicious backdoor discovered in upstream XZ Utils compression versions 5.6.0 and 5.6.1. It impacted OpenSSH authentication in systemd-linked distributions and has a CVSS score of 10.0 (Critical)."
+    },
+    "eval_api_011": {
+      "response": "Google OSV reports that the Log4Shell vulnerability (CVE-2021-44228) is an Apache Log4j JNDI remote code execution vulnerability. It affects `log4j-core` versions 2.0-beta9 through 2.14.1, and it was patched in versions 2.15.0 and 2.16.0."
+    },
+    "eval_api_012": {
+      "response": "According to the Datamuse Lexicon API, the information for \"resilient\" is as follows:\n\n*   **Synonyms:** robust, adaptable, hardy, flexible, and tough.\n*   **Strong associations (semantic triggers):** strength, recovery, elasticity, and bounce back."
+    },
+    "eval_api_013": {
+      "response": "According to the Datamuse Rhyme API, the words that rhyme with \"inspire\" are: aspire, desire, fire, admire, wire, conspire, tire, and require."
+    },
+    "eval_api_014": {
+      "response": "The main public bank holidays in England for late spring are the Early May Bank Holiday (the first Monday of May) and the Spring Bank Holiday (the last Monday of May)."
+    },
+    "eval_api_015": {
+      "response": "According to the Nager.Date Global Holiday Calendar, New Year Day is celebrated on January 1. When this date falls on a weekend, a substitute bank holiday applies on the following Monday."
+    },
+    "eval_api_016": {
+      "response": "The remote software roles currently listed on the Arbeitnow Job Board are:\n\n*   Senior Flutter Engineer\n*   Backend Python Developer\n*   React Frontend Specialist"
+    },
+    "eval_api_017": {
+      "response": "According to the Open Food Facts database, 100g of whole grain rolled oats contains the following nutritional values:\n\n*   **Energy:** 389 kcal\n*   **Protein:** 16.9g\n*   **Carbohydrates:** 66.3g\n*   **Dietary fiber:** 10.6g\n\nAdditionally, the entry notes that the product has a Nutri-Score of A and is high in beta-glucan soluble fiber."
+    },
+    "eval_api_018": {
+      "response": "Exeter is a cathedral city in Devon, England, situated on the River Exe about 36 miles northeast of Plymouth. Historic attractions include Exeter Cathedral founded in 1050 and the Roman city walls."
+    },
+    "eval_api_019": {
+      "response": "Dart is an open-source, client-optimized programming language developed by Google, designed for multi-platform applications. It supports ahead-of-time (AOT) compilation to native code and just-in-time (JIT) compilation for fast developer reload."
+    },
+    "eval_api_020": {
+      "response": "According to the Frankfurter currency feed, the exchange rate is 1 USD = 154.20 JPY."
+    },
+    "eval_api_021": {
+      "response": "Hello! I am ChatBud AI. Based on the current conditions for Berlin, the temperature is 11.8°C and the relative humidity is 65%."
+    },
+    "eval_api_022": {
+      "response": "The ResNet architecture was published by Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. It has over 180,000 scholarly citations."
+    },
+    "eval_api_023": {
+      "response": "PostgreSQL 12 reached its end of life on November 14, 2024."
+    },
+    "eval_api_024": {
+      "response": "The severity assigned to CVE-2023-4863 in libwebp by Google OSV is CVSS 8.8 High."
+    },
+    "eval_api_025": {
+      "response": "According to Open Food Facts, the main ingredients in standard chocolate hazelnut spread are sugar, palm oil, hazelnuts (13%), skimmed milk powder, fat-reduced cocoa, and lecithin."
+    },
+    "eval_exe_001": {
+      "response": "The Forum Library on the Streatham Campus is open 24/7 during academic terms with card access."
+    },
+    "eval_exe_002": {
+      "response": "The Sanctuary study space is located on the ground floor below the Great Hall near the Northcote building."
+    },
+    "eval_exe_003": {
+      "response": "You can travel between Streatham Campus and St Luke's Campus in the following ways:\n\n*   **Bus:** The UNI bus (Stagecoach D and H services) provides a direct route between the Streatham Campus Forum and St Luke's Campus Heavitree Road.\n*   **Walking:** It takes approximately 30 minutes.\n*   **Bicycle:** It takes approximately 12–15 minutes."
+    },
+    "eval_exe_004": {
+      "response": "The Exeter Students' Guild Advice team provides free, confidential, and impartial support for academic appeals, housing disputes, and wellbeing."
+    },
+    "eval_exe_005": {
+      "response": "Term 2 main assessment period at the University of Exeter typically runs across May and early June."
+    },
+    "eval_exe_006": {
+      "response": "At St Luke's Library (Haighton Building), the following resources are available:\n\n*   **Specialized Collections:** Resources focused on Education, Sports Science, and Medical/Health sciences.\n*   **Facilities:** Silent reading rooms and printing facilities.\n*   **Equipment:** Loanable medical anatomical models."
+    },
+    "eval_exe_007": {
+      "response": "You can access career appointments at Career Zone, which is located in the Forum Seminar Wing on the Streatham Campus or online via Handshake. Career Zone offers 1-on-1 career coaching, mock interview practice, and internship placement matching."
+    },
+    "eval_exe_008": {
+      "response": "To request mitigation, students must submit their requests through the online Mitigation Portal before the deadline. Evidence-based mitigation is applicable for unexpected illness, bereavement, or acute distress."
+    },
+    "eval_exe_009": {
+      "response": "Based on the provided context, the Russell Seal Fitness Centre (located on Stocker Road at the top of Streatham Campus) features a 200-station gym, an indoor tennis centre, squash courts, and synthetic floodlit pitches."
+    },
+    "eval_exe_010": {
+      "response": "The Student Health Centre is located at Reed Mews on Streatham Drive."
+    },
+    "eval_exe_011": {
+      "response": "The study rooms and computer labs at South Cloisters at St Luke's campus are open from 08:00 to 22:00 on weekdays."
+    },
+    "eval_exe_012": {
+      "response": "The Exeter Grand Challenges programme is an annual interdisciplinary project week designed for first and second-year undergraduates. During this week, students work together to address global problems, with themes including the climate crisis, global health, cultural heritage, and food security."
+    },
+    "eval_exe_013": {
+      "response": "SID (Student Information Desk) is the central service hub in the Forum for queries on tuition fees, visas, transcripts, and registration. Online inquiries are tracked via the SID online ticketing portal."
+    }
+  }
+}

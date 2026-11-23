@@ -1,0 +1,1409 @@
+{
+  "benchmark_version": "1.0.0",
+  "total_queries": 100,
+  "queries": [
+    {
+      "id": "eval_api_001",
+      "category": "live_public_api",
+      "persona_id": "frankfurter",
+      "query": "What is the current ECB exchange rate from EUR to USD?",
+      "ground_truth_context": [
+        "Frankfurter API European Central Bank reference rate: 1 EUR = 1.0845 USD.",
+        "Frankfurter provides free open currency conversion published by the European Central Bank without API keys."
+      ],
+      "reference_answer": "According to the European Central Bank reference rate via the Frankfurter API, 1 EUR equals approximately 1.0845 USD.",
+      "expected_sources": [
+        "Frankfurter ECB Currency API",
+        "api.frankfurter.app"
+      ]
+    },
+    {
+      "id": "eval_api_002",
+      "category": "live_public_api",
+      "persona_id": "frankfurter",
+      "query": "What is the exchange rate between GBP and EUR?",
+      "ground_truth_context": [
+        "Frankfurter currency feed: 1 GBP = 1.1680 EUR as per European Central Bank daily rates.",
+        "Rates are updated at around 16:00 CET on every ECB working day."
+      ],
+      "reference_answer": "Based on the European Central Bank data provided by Frankfurter, 1 GBP is approximately 1.1680 EUR.",
+      "expected_sources": [
+        "Frankfurter ECB Currency API"
+      ]
+    },
+    {
+      "id": "eval_api_003",
+      "category": "live_public_api",
+      "persona_id": "weather_rag",
+      "query": "What is the current weather forecast for London?",
+      "ground_truth_context": [
+        "Open-Meteo Weather API for London (51.5074 N, 0.1278 W): Temperature 14.2\u00b0C, relative humidity 78%, wind speed 12 km/h, partly cloudy.",
+        "Open-Meteo provides global hourly and 7-day weather forecasts under open data licenses."
+      ],
+      "reference_answer": "In London, the current temperature is 14.2\u00b0C with 78% relative humidity, 12 km/h winds, and partly cloudy skies.",
+      "expected_sources": [
+        "Open-Meteo Weather API",
+        "open-meteo.com"
+      ]
+    },
+    {
+      "id": "eval_api_004",
+      "category": "live_public_api",
+      "persona_id": "weather_rag",
+      "query": "Can you check the weather in Tokyo right now?",
+      "ground_truth_context": [
+        "Open-Meteo observation for Tokyo (35.6762 N, 139.6503 E): Current temperature 19.5\u00b0C, wind speed 8 km/h, clear sky.",
+        "Hourly forecasts predict stable temperatures over the next 12 hours."
+      ],
+      "reference_answer": "The weather in Tokyo is currently clear with a temperature of 19.5\u00b0C and gentle winds at 8 km/h.",
+      "expected_sources": [
+        "Open-Meteo Weather API"
+      ]
+    },
+    {
+      "id": "eval_api_005",
+      "category": "live_public_api",
+      "persona_id": "openalex_rag",
+      "query": "Who are the authors of the seminal Transformer paper Attention Is All You Need?",
+      "ground_truth_context": [
+        "OpenAlex Work ID W2741809807: Attention Is All You Need (2017) by Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin.",
+        "Published in NeurIPS 2017 with over 120,000 scholarly citations cataloged in OpenAlex."
+      ],
+      "reference_answer": "The Transformer paper Attention Is All You Need was authored by Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin in 2017.",
+      "expected_sources": [
+        "OpenAlex Scholarly API",
+        "openalex.org"
+      ]
+    },
+    {
+      "id": "eval_api_006",
+      "category": "live_public_api",
+      "persona_id": "openalex_rag",
+      "query": "What is the publication year and citation count for the BERT paper in OpenAlex?",
+      "ground_truth_context": [
+        "OpenAlex Work: BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding by Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova.",
+        "Published in NAACL-HLT 2019, indexed with over 85,000 academic citations."
+      ],
+      "reference_answer": "The BERT paper was published in 2019 at NAACL-HLT by Devlin et al. and has accumulated over 85,000 citations in OpenAlex.",
+      "expected_sources": [
+        "OpenAlex Scholarly API"
+      ]
+    },
+    {
+      "id": "eval_api_007",
+      "category": "live_public_api",
+      "persona_id": "eol_rag",
+      "query": "Is Flutter 3.24 currently supported or past its end of life?",
+      "ground_truth_context": [
+        "endoflife.date/flutter API: Flutter 3.24 was released on August 6, 2024. Active maintenance supported until next minor/major release cycle.",
+        "Flutter follows a continuous release cadence where the stable channel receives regular point patches."
+      ],
+      "reference_answer": "According to endoflife.date, Flutter 3.24 was released in August 2024 and is within active community support on the stable branch.",
+      "expected_sources": [
+        "endoflife.date API",
+        "endoflife.date/flutter"
+      ]
+    },
+    {
+      "id": "eval_api_008",
+      "category": "live_public_api",
+      "persona_id": "eol_rag",
+      "query": "When does Node.js 18 reach End of Life?",
+      "ground_truth_context": [
+        "endoflife.date/nodejs API: Node.js 18 (Hydrogen) Maintenance LTS ended on April 30, 2025.",
+        "Users are advised to upgrade to Node.js 20 LTS or Node.js 22 LTS for active security patches."
+      ],
+      "reference_answer": "As documented on endoflife.date, Node.js 18 reached End of Life on April 30, 2025, and users should upgrade to Node 20 or 22 LTS.",
+      "expected_sources": [
+        "endoflife.date API",
+        "endoflife.date/nodejs"
+      ]
+    },
+    {
+      "id": "eval_api_009",
+      "category": "live_public_api",
+      "persona_id": "eol_rag",
+      "query": "When is Python 3.9 scheduled for End of Life?",
+      "ground_truth_context": [
+        "endoflife.date/python: Python 3.9 security support ends in October 2025.",
+        "Python release cycles maintain 5 years of total support (1.5 years bugfix + 3.5 years security)."
+      ],
+      "reference_answer": "Python 3.9 reaches official End of Life in October 2025 according to the Python release schedule on endoflife.date.",
+      "expected_sources": [
+        "endoflife.date API"
+      ]
+    },
+    {
+      "id": "eval_api_010",
+      "category": "live_public_api",
+      "persona_id": "osv_rag",
+      "query": "What is CVE-2024-3094 related to?",
+      "ground_truth_context": [
+        "Google OSV / NVD Advisory: CVE-2024-3094 represents a malicious backdoor discovered in upstream XZ Utils compression versions 5.6.0 and 5.6.1.",
+        "Impacted OpenSSH authentication in systemd-linked distributions; CVSS score 10.0 Critical."
+      ],
+      "reference_answer": "CVE-2024-3094 is a critical CVSS 10.0 backdoor identified in XZ Utils versions 5.6.0 and 5.6.1 targeting SSH daemon authentication.",
+      "expected_sources": [
+        "Google Open Source Vulnerabilities (OSV)",
+        "osv.dev"
+      ]
+    },
+    {
+      "id": "eval_api_011",
+      "category": "live_public_api",
+      "persona_id": "osv_rag",
+      "query": "What does Google OSV report for Log4Shell vulnerability CVE-2021-44228?",
+      "ground_truth_context": [
+        "OSV entry GHSA-j2ge-4vd9-79pq: Apache Log4j JNDI remote code execution vulnerability (CVE-2021-44228).",
+        "Affects log4j-core versions 2.0-beta9 through 2.14.1; patched in 2.15.0 and 2.16.0."
+      ],
+      "reference_answer": "Google OSV classifies CVE-2021-44228 (Log4Shell) as a critical remote code execution vulnerability in Apache Log4j fixed in version 2.15.0 and above.",
+      "expected_sources": [
+        "Google Open Source Vulnerabilities (OSV)"
+      ]
+    },
+    {
+      "id": "eval_api_012",
+      "category": "live_public_api",
+      "persona_id": "lexicon_rag",
+      "query": "What are synonyms and semantic triggers for resilient according to Datamuse?",
+      "ground_truth_context": [
+        "Datamuse Lexicon API results for resilient: synonyms include robust, adaptable, hardy, flexible, tough.",
+        "Strong associations: strength, recovery, elasticity, bounce back."
+      ],
+      "reference_answer": "According to Datamuse, synonyms for resilient include robust, adaptable, hardy, flexible, and tough, representing strength and recovery.",
+      "expected_sources": [
+        "Datamuse Lexicon API",
+        "api.datamuse.com"
+      ]
+    },
+    {
+      "id": "eval_api_013",
+      "category": "live_public_api",
+      "persona_id": "lexicon_rag",
+      "query": "What words rhyme with inspire according to lexical search?",
+      "ground_truth_context": [
+        "Datamuse Rhyme API (rel_rhy=inspire): aspire, desire, fire, admire, wire, conspire, tire, require.",
+        "All returned results have high lexical frequency scores in English corpora."
+      ],
+      "reference_answer": "Words that rhyme with inspire include aspire, desire, admire, fire, conspire, and require.",
+      "expected_sources": [
+        "Datamuse Lexicon API"
+      ]
+    },
+    {
+      "id": "eval_api_014",
+      "category": "live_public_api",
+      "persona_id": "holiday_rag",
+      "query": "What are the main public bank holidays in England for late spring?",
+      "ground_truth_context": [
+        "Nager.Date / GOV.UK Bank Holidays: Early May Bank Holiday (first Monday of May) and Spring Bank Holiday (last Monday of May).",
+        "Official statutory public holidays observed in England and Wales."
+      ],
+      "reference_answer": "England observes two statutory bank holidays in late spring: the Early May Bank Holiday and the Spring Bank Holiday at the end of May.",
+      "expected_sources": [
+        "Nager.Date Public Holidays",
+        "GOV.UK Bank Holidays"
+      ]
+    },
+    {
+      "id": "eval_api_015",
+      "category": "live_public_api",
+      "persona_id": "holiday_rag",
+      "query": "When is New Year Day celebrated in public holiday schedules?",
+      "ground_truth_context": [
+        "Nager.Date Global Holiday Calendar: January 1 is universally recognized as New Year Day across all ISO-3166 territory calendars.",
+        "When falling on a weekend, substitute bank holidays apply on the following Monday."
+      ],
+      "reference_answer": "New Year Day is celebrated globally on January 1, with substitute bank holiday observances when it coincides with a weekend.",
+      "expected_sources": [
+        "Nager.Date Public Holidays"
+      ]
+    },
+    {
+      "id": "eval_api_016",
+      "category": "live_public_api",
+      "persona_id": "jobs_rag",
+      "query": "What remote software roles are currently listed on Arbeitnow?",
+      "ground_truth_context": [
+        "Arbeitnow Job Board API: Remote software developer positions listed for Senior Flutter Engineer, Backend Python Developer, and React Frontend Specialist.",
+        "Listings include visa sponsorship badges, remote location flags, and direct apply URLs."
+      ],
+      "reference_answer": "Arbeitnow lists remote engineering roles including Senior Flutter Engineer, Backend Python Developer, and React Specialist with direct apply options.",
+      "expected_sources": [
+        "Arbeitnow Jobs API",
+        "arbeitnow.com"
+      ]
+    },
+    {
+      "id": "eval_api_017",
+      "category": "live_public_api",
+      "persona_id": "public_api_rag",
+      "query": "What nutritional values does Open Food Facts report for rolled oats?",
+      "ground_truth_context": [
+        "Open Food Facts database entry: Whole grain rolled oats contain approximately 389 kcal, 16.9g protein, 66.3g carbohydrates, and 10.6g dietary fiber per 100g.",
+        "Nutri-Score A, high in beta-glucan soluble fiber."
+      ],
+      "reference_answer": "According to Open Food Facts, 100g of rolled oats provides 389 kcal, 16.9g protein, 66.3g carbs, and 10.6g dietary fiber with a Nutri-Score of A.",
+      "expected_sources": [
+        "Open Food Facts",
+        "world.openfoodfacts.org"
+      ]
+    },
+    {
+      "id": "eval_api_018",
+      "category": "live_public_api",
+      "persona_id": "wiki_rag",
+      "query": "What is the Wikipedia summary for the city of Exeter, Devon?",
+      "ground_truth_context": [
+        "Wikipedia API summary: Exeter is a cathedral city in Devon, England, situated on the River Exe about 36 miles northeast of Plymouth.",
+        "Historic attractions include Exeter Cathedral founded in 1050 and the Roman city walls."
+      ],
+      "reference_answer": "Exeter is a historic cathedral city in Devon, England, situated along the River Exe and renowned for Exeter Cathedral and Roman city walls.",
+      "expected_sources": [
+        "Wikipedia API",
+        "en.wikipedia.org"
+      ]
+    },
+    {
+      "id": "eval_api_019",
+      "category": "live_public_api",
+      "persona_id": "wiki_rag",
+      "query": "What is the Wikipedia overview of the Dart programming language?",
+      "ground_truth_context": [
+        "Wikipedia API summary: Dart is an open-source, client-optimized programming language developed by Google, designed for multi-platform applications.",
+        "It supports ahead-of-time (AOT) compilation to native code and just-in-time (JIT) compilation for fast developer reload."
+      ],
+      "reference_answer": "Dart is Google's open-source, client-optimized programming language featuring AOT compilation to native machine code and JIT compilation for hot reload.",
+      "expected_sources": [
+        "Wikipedia API"
+      ]
+    },
+    {
+      "id": "eval_api_020",
+      "category": "live_public_api",
+      "persona_id": "frankfurter",
+      "query": "What is the exchange rate from USD to JPY according to Frankfurter?",
+      "ground_truth_context": [
+        "Frankfurter currency feed: 1 USD = 154.20 JPY based on European Central Bank reference triangulation.",
+        "Rates reflect daily foreign exchange trading benchmarks."
+      ],
+      "reference_answer": "The European Central Bank benchmark via Frankfurter shows 1 USD is approximately 154.20 JPY.",
+      "expected_sources": [
+        "Frankfurter ECB Currency API"
+      ]
+    },
+    {
+      "id": "eval_api_021",
+      "category": "live_public_api",
+      "persona_id": "weather_rag",
+      "query": "What is the temperature and humidity in Berlin right now?",
+      "ground_truth_context": [
+        "Open-Meteo current conditions for Berlin: Temperature 11.8\u00b0C, relative humidity 65%, wind speed 15 km/h.",
+        "Precipitation probability 10% over the next 6 hours."
+      ],
+      "reference_answer": "In Berlin, the temperature is currently 11.8\u00b0C with 65% humidity and winds around 15 km/h.",
+      "expected_sources": [
+        "Open-Meteo Weather API"
+      ]
+    },
+    {
+      "id": "eval_api_022",
+      "category": "live_public_api",
+      "persona_id": "openalex_rag",
+      "query": "Who published the ResNet architecture and how many citations does it have?",
+      "ground_truth_context": [
+        "OpenAlex Work: Deep Residual Learning for Image Recognition by Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.",
+        "Published in CVPR 2016; indexed with over 180,000 scholarly citations."
+      ],
+      "reference_answer": "The ResNet paper was published in CVPR 2016 by Kaiming He et al. and has amassed over 180,000 citations in OpenAlex.",
+      "expected_sources": [
+        "OpenAlex Scholarly API"
+      ]
+    },
+    {
+      "id": "eval_api_023",
+      "category": "live_public_api",
+      "persona_id": "eol_rag",
+      "query": "What is the end of life date for PostgreSQL 12?",
+      "ground_truth_context": [
+        "endoflife.date/postgresql: PostgreSQL 12 reached End of Life on November 14, 2024.",
+        "No further security or stability releases will be issued by the PostgreSQL Global Development Group for version 12."
+      ],
+      "reference_answer": "PostgreSQL 12 officially reached End of Life on November 14, 2024, receiving no further security patches.",
+      "expected_sources": [
+        "endoflife.date API"
+      ]
+    },
+    {
+      "id": "eval_api_024",
+      "category": "live_public_api",
+      "persona_id": "osv_rag",
+      "query": "What severity is assigned to CVE-2023-4863 in libwebp by Google OSV?",
+      "ground_truth_context": [
+        "Google OSV Advisory: CVE-2023-4863 heap buffer overflow in libwebp during Huffman table handling.",
+        "Assigned CVSS 8.8 High; exploited in the wild via web browsers and messaging applications."
+      ],
+      "reference_answer": "CVE-2023-4863 in libwebp is classified with a CVSS 8.8 High severity due to a heap buffer overflow in Huffman coding.",
+      "expected_sources": [
+        "Google Open Source Vulnerabilities (OSV)"
+      ]
+    },
+    {
+      "id": "eval_api_025",
+      "category": "live_public_api",
+      "persona_id": "public_api_rag",
+      "query": "What are the main ingredients in hazelnut spread per Open Food Facts?",
+      "ground_truth_context": [
+        "Open Food Facts product record: Standard chocolate hazelnut spread contains sugar, palm oil, hazelnuts (13%), skimmed milk powder, fat-reduced cocoa, and lecithin.",
+        "Nutri-Score E due to high sugar and saturated fat content."
+      ],
+      "reference_answer": "Open Food Facts lists sugar, palm oil, hazelnuts (13%), skimmed milk, and cocoa as primary ingredients, yielding a Nutri-Score of E.",
+      "expected_sources": [
+        "Open Food Facts"
+      ]
+    },
+    {
+      "id": "eval_exe_001",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What are the opening hours for the Forum Library at the University of Exeter?",
+      "ground_truth_context": [
+        "Forum Library on the Streatham Campus is open 24/7 during academic terms with card access.",
+        "Library facilities include silent study suites, group seminar rooms, and assistive technology booths."
+      ],
+      "reference_answer": "The Forum Library on Streatham Campus is open 24 hours a day, 7 days a week during academic terms with student card access.",
+      "expected_sources": [
+        "University of Exeter Campus Directory",
+        "Forum Library Services"
+      ]
+    },
+    {
+      "id": "eval_exe_002",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "Where is the Sanctuary study space located on Streatham Campus?",
+      "ground_truth_context": [
+        "The Sanctuary study space is located on the ground floor below the Great Hall near the Northcote building.",
+        "It provides quiet unbooked study desks, power outlets, and Wi-Fi coverage."
+      ],
+      "reference_answer": "The Sanctuary is situated below the Great Hall on Streatham Campus, offering quiet drop-in study desks with power sockets.",
+      "expected_sources": [
+        "Exeter Campus Navigation Guide"
+      ]
+    },
+    {
+      "id": "eval_exe_003",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "How do I travel between Streatham Campus and St Luke's Campus?",
+      "ground_truth_context": [
+        "The UNI bus (Stagecoach D and H services) runs direct routes between Streatham Campus Forum and St Luke's Campus Heavitree Road.",
+        "Walking takes approximately 30 minutes, or 12-15 minutes by bicycle."
+      ],
+      "reference_answer": "You can travel between Streatham and St Luke's via the Stagecoach D or H bus routes, or via a 30-minute walk / 15-minute cycle.",
+      "expected_sources": [
+        "Exeter Sustainable Travel & Bus Guides"
+      ]
+    },
+    {
+      "id": "eval_exe_004",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What support does the Exeter Guild Advice team provide to students?",
+      "ground_truth_context": [
+        "Exeter Students' Guild Advice provides free, confidential, impartial support for academic appeals, housing disputes, and wellbeing.",
+        "Located in Devonshire House on Streatham Campus."
+      ],
+      "reference_answer": "The Guild Advice team offers free, independent, confidential assistance for academic appeals, accommodation issues, and student rights.",
+      "expected_sources": [
+        "Exeter Students' Guild Advice Services"
+      ]
+    },
+    {
+      "id": "eval_exe_005",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "When do Term 2 exams typically take place at Exeter?",
+      "ground_truth_context": [
+        "University of Exeter Academic Calendar: Term 2 main assessment period runs across May and early June.",
+        "Final timetables are published on MyExeter and SRS portal by mid-April."
+      ],
+      "reference_answer": "Term 2 assessments generally take place throughout May and early June, with individualized schedules published in April on MyExeter.",
+      "expected_sources": [
+        "Exeter Academic Operations Calendar"
+      ]
+    },
+    {
+      "id": "eval_exe_006",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What resources are available at the St Luke's Haighton Library?",
+      "ground_truth_context": [
+        "St Luke's Library (Haighton Building) specializes in Education, Sports Science, and Medical/Health sciences.",
+        "Features silent reading rooms, loanable medical anatomical models, and printing facilities."
+      ],
+      "reference_answer": "The Haighton Library at St Luke's focuses on Education, Sports, and Health Sciences, providing study spaces and specialized research texts.",
+      "expected_sources": [
+        "Exeter Libraries Directory"
+      ]
+    },
+    {
+      "id": "eval_exe_007",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "Where can I access career appointments and CV reviews at Exeter?",
+      "ground_truth_context": [
+        "Career Zone is located in the Forum Seminar Wing on Streatham Campus and online via Handshake.",
+        "Offers 1-on-1 career coaching, mock interview practice, and internship placement matching."
+      ],
+      "reference_answer": "Exeter Career Zone operates from the Forum Seminar Wing and Handshake, offering personalized CV reviews and interview preparation.",
+      "expected_sources": [
+        "Exeter Career Zone Hub"
+      ]
+    },
+    {
+      "id": "eval_exe_008",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What is the procedure for requesting an assessment extension or mitigation?",
+      "ground_truth_context": [
+        "Students submit mitigation requests through the online Mitigation Portal before the deadline.",
+        "Evidence-based mitigation covers unexpected illness, bereavement, or acute distress."
+      ],
+      "reference_answer": "Mitigation applications are submitted through Exeter's online portal prior to assessment deadlines with supporting evidence of exceptional circumstances.",
+      "expected_sources": [
+        "Exeter Academic Mitigation Handbook"
+      ]
+    },
+    {
+      "id": "eval_exe_009",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What are the Streatham Sports Park facilities?",
+      "ground_truth_context": [
+        "Russell Seal Fitness Centre features a 200-station gym, indoor tennis centre, squash courts, and synthetic floodlit pitches.",
+        "Located on Stocker Road at the top of Streatham Campus."
+      ],
+      "reference_answer": "The Sports Park at Streatham Campus features the Russell Seal Fitness Centre, indoor tennis courts, all-weather pitches, and squash facilities.",
+      "expected_sources": [
+        "Exeter Sport & Recreation Facilities"
+      ]
+    },
+    {
+      "id": "eval_exe_010",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "Where is the Student Health Centre on Streatham Campus?",
+      "ground_truth_context": [
+        "The Student Health Centre is located at Reed Mews on Streatham Drive.",
+        "Provides NHS GP consultations, immunizations, and repeat prescription services for registered students."
+      ],
+      "reference_answer": "The Student Health Centre is located in Reed Mews on Streatham Drive, offering full NHS general practice medical care.",
+      "expected_sources": [
+        "Exeter Student Health Services"
+      ]
+    },
+    {
+      "id": "eval_exe_011",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What are the opening times for the Forum South Cloisters study space at St Luke's?",
+      "ground_truth_context": [
+        "South Cloisters at St Luke's campus offers study rooms and computer labs open 08:00 to 22:00 on weekdays.",
+        "Accessible via University ID card."
+      ],
+      "reference_answer": "South Cloisters at St Luke's provides study suites and PC clusters open from 08:00 to 22:00 on weekdays with card access.",
+      "expected_sources": [
+        "St Luke's Campus Directory"
+      ]
+    },
+    {
+      "id": "eval_exe_012",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "How does the Exeter Grand Challenges programme work?",
+      "ground_truth_context": [
+        "Grand Challenges is an annual interdisciplinary project week for first and second year undergraduates working on global problems.",
+        "Themes include climate crisis, global health, cultural heritage, and food security."
+      ],
+      "reference_answer": "Grand Challenges is an interdisciplinary project week where undergraduates collaborate with academics and industry experts on pressing global challenges.",
+      "expected_sources": [
+        "Exeter Grand Challenges Guide"
+      ]
+    },
+    {
+      "id": "eval_exe_013",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What is the University of Exeter Student Information Desk (SID)?",
+      "ground_truth_context": [
+        "SID (Student Information Desk) is the central service hub in the Forum for queries on tuition fees, visas, transcripts, and registration.",
+        "Online inquiries are tracked via the SID online ticketing portal."
+      ],
+      "reference_answer": "SID in the Forum is the one-stop query desk for student documentation, fee payments, visa advice, and general administrative services.",
+      "expected_sources": [
+        "Student Information Desk (SID)"
+      ]
+    },
+    {
+      "id": "eval_exe_014",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "Where can students find quiet reflection or prayer rooms on Streatham campus?",
+      "ground_truth_context": [
+        "The Multi-Faith Chaplaincy and Quiet Room are located at the Old Library building and Mary Harris Memorial Chapel.",
+        "Includes dedicated ablution facilities and open prayer rooms for all faiths."
+      ],
+      "reference_answer": "Prayer and quiet reflection spaces are located at the Old Library Multi-Faith Chaplaincy and Mary Harris Memorial Chapel with ablution facilities.",
+      "expected_sources": [
+        "Exeter Multi-Faith Chaplaincy"
+      ]
+    },
+    {
+      "id": "eval_exe_015",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What computer clusters are available 24/7 on Streatham Campus?",
+      "ground_truth_context": [
+        "Forum Library IT clusters and Laver Building computer suites provide 24/7 computing facilities with university network logins.",
+        "Equipped with standard desktop software, SPSS, MATLAB, and specialized lab tools."
+      ],
+      "reference_answer": "24/7 computers are located inside the Forum Library and Laver Building with access to university analytical and engineering software.",
+      "expected_sources": [
+        "Exeter Digital & IT Services"
+      ]
+    },
+    {
+      "id": "eval_exe_016",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "How do postgraduate research students book desk space in the Research Commons?",
+      "ground_truth_context": [
+        "The Research Commons is situated on the second floor of the Old Library dedicated to PGRs and academic staff.",
+        "Offers silent research desks, microfiche scanners, and thesis consultation areas."
+      ],
+      "reference_answer": "Postgraduate researchers can access dedicated silent workspaces in the Research Commons on the second floor of the Old Library.",
+      "expected_sources": [
+        "Exeter Research Commons"
+      ]
+    },
+    {
+      "id": "eval_exe_017",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What food and dining options are located in Devonshire House and the Forum?",
+      "ground_truth_context": [
+        "The Forum and Devonshire House host Pret A Manger, Com choir cafe, Guild Shop, Ram Bar, and Terrace restaurant.",
+        "Dietary options include certified halal, vegan, and gluten-free selections."
+      ],
+      "reference_answer": "Dining options include Pret A Manger, The Terrace, and the Ram Bar in Devonshire House, catering to vegan, halal, and gluten-free diets.",
+      "expected_sources": [
+        "Exeter Hospitality & Guild Food Outlets"
+      ]
+    },
+    {
+      "id": "eval_exe_018",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What printing and binding services exist on campus for dissertation submission?",
+      "ground_truth_context": [
+        "Print Services at the Old Library provide thesis binding, wide-format poster printing, and booklet finishing.",
+        "Standard follow-me printing is available at all networked multifunction printers."
+      ],
+      "reference_answer": "Exeter Print Services in the Old Library offers professional dissertation binding and poster printing, alongside campus-wide follow-me print units.",
+      "expected_sources": [
+        "Exeter Print Services"
+      ]
+    },
+    {
+      "id": "eval_exe_019",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "Where is the Bill Douglas Cinema Museum located?",
+      "ground_truth_context": [
+        "The Bill Douglas Cinema Museum is located in the Old Library on Prince of Wales Road, Streatham Campus.",
+        "Holds over 80,000 artefacts dedicated to the history of the moving image and cinema."
+      ],
+      "reference_answer": "The Bill Douglas Cinema Museum is housed in the Old Library on Streatham Campus, exhibiting 80,000+ cinema and pre-cinema artefacts.",
+      "expected_sources": [
+        "Bill Douglas Cinema Museum"
+      ]
+    },
+    {
+      "id": "eval_exe_020",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What accommodation villages are located on East Park and Birks Grange?",
+      "ground_truth_context": [
+        "East Park provides modern en-suite residences at the northeast side of Streatham Campus.",
+        "Birks Grange Village on New North Road includes catered halls and self-catered flats."
+      ],
+      "reference_answer": "East Park offers en-suite rooms near the Sports Park, while Birks Grange Village provides catered and self-catered accommodation on New North Road.",
+      "expected_sources": [
+        "Exeter Student Living Guide"
+      ]
+    },
+    {
+      "id": "eval_exe_021",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What student societies exist for computing and software engineering at Exeter?",
+      "ground_truth_context": [
+        "Exeter Computer Science Society (ExCS) hosts hackathons, coding workshops, game jams, and tech talk evenings.",
+        "Affiliated with the Exeter Students' Guild and BCS student chapter."
+      ],
+      "reference_answer": "The Exeter Computer Science Society (ExCS) organizes hackathons, technical interview sessions, and speaker panels through the Students' Guild.",
+      "expected_sources": [
+        "Exeter Students' Guild Societies"
+      ]
+    },
+    {
+      "id": "eval_exe_022",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What mental health support is provided by Exeter Wellbeing Services?",
+      "ground_truth_context": [
+        "Wellbeing Services in Reed Hall and online provide cognitive behavioural therapy, psychological triage, and counsellor sessions.",
+        "Urgent triage is offered via the 24/7 Spectrum Life student helpline."
+      ],
+      "reference_answer": "Wellbeing Services offers CBT, counselling, and psychological support at Reed Hall, supported by the 24/7 Spectrum Life crisis helpline.",
+      "expected_sources": [
+        "Exeter Wellbeing & Mental Health Services"
+      ]
+    },
+    {
+      "id": "eval_exe_023",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "How do students access digital library resources off campus?",
+      "ground_truth_context": [
+        "Exeter Library Electronic Resources are accessed via Shibboleth Single Sign-On using your Exeter username and password.",
+        "Provides access to JSTOR, ScienceDirect, IEEE Xplore, and Web of Science."
+      ],
+      "reference_answer": "Digital journals and databases are accessible off-campus via institutional Single Sign-On (Shibboleth) through the Exeter Library search portal.",
+      "expected_sources": [
+        "Exeter Electronic Library Portal"
+      ]
+    },
+    {
+      "id": "eval_exe_024",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "Where is the Innovation Centre located on Streatham Campus?",
+      "ground_truth_context": [
+        "The Exeter Innovation Centre is situated on Rennes Drive at the top of Streatham Campus.",
+        "Houses startup incubation units, SETsquared Exeter, and knowledge transfer partnerships."
+      ],
+      "reference_answer": "The Innovation Centre is located on Rennes Drive, hosting SETsquared startup incubation and industry-academic research partnerships.",
+      "expected_sources": [
+        "Exeter Innovation Centre"
+      ]
+    },
+    {
+      "id": "eval_exe_025",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What is the Streatham Campus arboretum and botanical garden status?",
+      "ground_truth_context": [
+        "Streatham Campus is a registered botanic garden with over 10,000 trees, exotic conifers, and subtropical plantings.",
+        "Guided horticulture and tree walks are held by the Grounds team throughout the year."
+      ],
+      "reference_answer": "Streatham Campus holds official botanic garden status, featuring over 10,000 specimen trees and subtropical plants across the grounds.",
+      "expected_sources": [
+        "Exeter Grounds & Botanic Garden"
+      ]
+    },
+    {
+      "id": "eval_mem_001",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is my preferred programming language for mobile development?",
+      "ground_truth_context": [
+        "User episodic memory: The user explicitly stated Flutter and Dart are their primary mobile development stack.",
+        "Recorded in Memory Vault with high confidence 0.95."
+      ],
+      "reference_answer": "Your preferred mobile development stack is Flutter and Dart, as saved in your Memory Vault.",
+      "expected_sources": [
+        "Memory Vault",
+        "Episodic Memory Layer"
+      ]
+    },
+    {
+      "id": "eval_mem_002",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "Do you remember which university I attended?",
+      "ground_truth_context": [
+        "User profile memory: Attended University of Exeter studying Computer Science.",
+        "Logged during academic onboarding conversation."
+      ],
+      "reference_answer": "Yes, you attended the University of Exeter studying Computer Science.",
+      "expected_sources": [
+        "Memory Vault"
+      ]
+    },
+    {
+      "id": "eval_mem_003",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What frontend framework did I choose for our web showcase?",
+      "ground_truth_context": [
+        "User memory fact: The developer chose Flutter Web with an HTML/CSS portfolio companion site.",
+        "Confidence score 0.92."
+      ],
+      "reference_answer": "You chose Flutter Web complemented by a dedicated responsive HTML/CSS portfolio companion website.",
+      "expected_sources": [
+        "Memory Vault"
+      ]
+    },
+    {
+      "id": "eval_mem_004",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is my preferred theme mode in ChatBud?",
+      "ground_truth_context": [
+        "Stored preference: User prefers Dark Mode (Soft Minimalist Slate palette).",
+        "Persisted in StorageService preferences."
+      ],
+      "reference_answer": "Your preference is Dark Mode using the Soft Minimalist Slate color palette.",
+      "expected_sources": [
+        "StorageService Preferences"
+      ]
+    },
+    {
+      "id": "eval_mem_005",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "Do I have an APILayer key configured?",
+      "ground_truth_context": [
+        "Profile state: Custom APILayer key is active for high-volume currency conversion.",
+        "Validated in PublicApiRagService storage."
+      ],
+      "reference_answer": "Yes, you have an APILayer key configured in your AI settings for high-volume conversion.",
+      "expected_sources": [
+        "PublicApiRagService Settings"
+      ]
+    },
+    {
+      "id": "eval_mem_006",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What database do we use for the cloud backend?",
+      "ground_truth_context": [
+        "Architecture memory: Backend persistence utilizes Cloud Firestore with offline SharedPreferences caching.",
+        "Security rules enforce authenticated access."
+      ],
+      "reference_answer": "We use Cloud Firestore for cloud sync, backed by local SharedPreferences for offline caching.",
+      "expected_sources": [
+        "ChatBud Architecture Memory"
+      ]
+    },
+    {
+      "id": "eval_mem_007",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "Which Gemini models do I like to switch between?",
+      "ground_truth_context": [
+        "User memory: Regularly switches between gemini-3.1-flash-lite, gemini-3.8-flash, and gemini-2.5-flash.",
+        "Stored in AI Configuration preferences."
+      ],
+      "reference_answer": "You typically switch between gemini-3.1-flash-lite, gemini-3.8-flash, and gemini-2.5-flash.",
+      "expected_sources": [
+        "AI Configuration Vault"
+      ]
+    },
+    {
+      "id": "eval_mem_008",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is the main goal of the ChatBud repository?",
+      "ground_truth_context": [
+        "Project fact: ChatBud is a non-commercial developer portfolio showcase demonstrating stateful multi-agent systems and Grounded RAG.",
+        "Repository license: MIT, strictly educational/demonstration."
+      ],
+      "reference_answer": "The main goal is to serve as a non-commercial portfolio showcase demonstrating multi-agent orchestration and Grounded RAG.",
+      "expected_sources": [
+        "Project Metadata Vault"
+      ]
+    },
+    {
+      "id": "eval_mem_009",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "Do I prefer long explanations or concise bullet points?",
+      "ground_truth_context": [
+        "User interaction preference: User prefers concise, direct explanations with actionable code snippets.",
+        "Recorded across multiple assistant turns."
+      ],
+      "reference_answer": "You prefer concise, clear answers with actionable code examples and structured bullet points.",
+      "expected_sources": [
+        "User Interaction Preferences"
+      ]
+    },
+    {
+      "id": "eval_mem_010",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What vector embedding technique is used by MemoryService?",
+      "ground_truth_context": [
+        "System fact: MemoryService uses a pure-Dart lexical term embedder with L2-normalized cosine similarity.",
+        "Runs completely offline on-device with zero cloud costs."
+      ],
+      "reference_answer": "MemoryService utilizes a pure-Dart lexical term embedder with L2-normalized cosine similarity running fully on-device.",
+      "expected_sources": [
+        "MemoryService Vector Engine"
+      ]
+    },
+    {
+      "id": "eval_mem_011",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is my stance on commercial monetization for this repo?",
+      "ground_truth_context": [
+        "User policy: Project is strictly non-commercial and published as an open-source technical proof-of-concept.",
+        "Highlighted in README notice and disclaimer."
+      ],
+      "reference_answer": "Your established policy is that ChatBud is strictly non-commercial and published as an open-source technical proof-of-concept.",
+      "expected_sources": [
+        "Portfolio Policy Memory"
+      ]
+    },
+    {
+      "id": "eval_mem_012",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What CI/CD platform is configured for ChatBud?",
+      "ground_truth_context": [
+        "DevOps memory: Automated testing and builds run via GitHub Actions on push and pull requests.",
+        "Includes Flutter analyze, test with coverage, and SARIF scanning."
+      ],
+      "reference_answer": "ChatBud uses GitHub Actions for continuous integration, running static analysis, test suites, and security scans.",
+      "expected_sources": [
+        "DevOps Configuration Vault"
+      ]
+    },
+    {
+      "id": "eval_mem_013",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What testing framework is used for Dart unit tests?",
+      "ground_truth_context": [
+        "Test memory: Unit, service, and widget tests use package:flutter_test with mockito and http.testing.",
+        "164 automated tests currently pass."
+      ],
+      "reference_answer": "Testing is implemented using package:flutter_test with http.testing and mock initializers.",
+      "expected_sources": [
+        "Test Suite Memory"
+      ]
+    },
+    {
+      "id": "eval_mem_014",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "How many personas are available in the Persona Hub?",
+      "ground_truth_context": [
+        "System memory: The Persona Hub hosts 16 curated presets plus custom persona creation.",
+        "Categorized into Academic, Engineering, Security, HR, Career, and Creative."
+      ],
+      "reference_answer": "There are 16 curated personas available in the Persona Hub across diverse specialist domains.",
+      "expected_sources": [
+        "Persona Hub Memory"
+      ]
+    },
+    {
+      "id": "eval_mem_015",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What keybinding sends messages on desktop?",
+      "ground_truth_context": [
+        "UI memory: Desktop users send messages with Enter and create newlines with Shift+Enter.",
+        "Active when viewport width is 840px or greater."
+      ],
+      "reference_answer": "On desktop, pressing Enter sends the message immediately, while Shift+Enter inserts a newline.",
+      "expected_sources": [
+        "Desktop UI Vault"
+      ]
+    },
+    {
+      "id": "eval_mem_016",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is the maximum message bubble width on desktop screens?",
+      "ground_truth_context": [
+        "Design memory: Message bubbles are constrained to a maximum width of 680px for optimal readability.",
+        "Defined in ChatBud responsive layout rules."
+      ],
+      "reference_answer": "Message bubbles are constrained to a maximum width of 680px on desktop screens.",
+      "expected_sources": [
+        "Design System Memory"
+      ]
+    },
+    {
+      "id": "eval_mem_017",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What happens when I chat in Zero-Login Guest Mode?",
+      "ground_truth_context": [
+        "Auth memory: Guest mode allows instant local chatting using SharedPreferences without creating an account.",
+        "Firestore sync is disabled until login."
+      ],
+      "reference_answer": "Guest mode lets you chat immediately with full local storage persistence without requiring account registration.",
+      "expected_sources": [
+        "Authentication Architecture"
+      ]
+    },
+    {
+      "id": "eval_mem_018",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is my primary role in software development?",
+      "ground_truth_context": [
+        "User memory: Sandeep Malviya is an AI Engineer and Full-Stack Mobile Architect.",
+        "Specializing in Flutter, multi-agent frameworks, and RAG systems."
+      ],
+      "reference_answer": "You are an AI Engineer and Full-Stack Mobile Architect specializing in Flutter and agentic systems.",
+      "expected_sources": [
+        "User Profile Memory"
+      ]
+    },
+    {
+      "id": "eval_mem_019",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "Which icon library is used across ChatBud?",
+      "ground_truth_context": [
+        "UI fact: ChatBud primarily uses cupertino_icons alongside standard Material Design icons.",
+        "Configured in pubspec.yaml."
+      ],
+      "reference_answer": "ChatBud combines cupertino_icons and Material Design symbols.",
+      "expected_sources": [
+        "UI Component Vault"
+      ]
+    },
+    {
+      "id": "eval_mem_020",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is the cache TTL for retrieved public API contexts?",
+      "ground_truth_context": [
+        "RAG memory: PublicApiRagService caches retrieved grounding contexts for 10 minutes (Duration(minutes: 10)).",
+        "Limits redundant HTTP requests."
+      ],
+      "reference_answer": "Retrieved public API context is cached in memory for 10 minutes.",
+      "expected_sources": [
+        "RAG Configuration Memory"
+      ]
+    },
+    {
+      "id": "eval_mem_021",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "How are ungrounded questions handled when public APIs return empty results?",
+      "ground_truth_context": [
+        "RAG fallback: When APIs return no data, the system falls back to Wikipedia or persona foundational knowledge without failing.",
+        "Graceful degradation with zero crashes."
+      ],
+      "reference_answer": "If an API returns no context, the system gracefully falls back to Wikipedia or base model knowledge without crashing.",
+      "expected_sources": [
+        "RAG Engine Resilience Memory"
+      ]
+    },
+    {
+      "id": "eval_mem_022",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is the target threshold for Faithfulness in our eval suite?",
+      "ground_truth_context": [
+        "Eval memory: Faithfulness target threshold is set to >= 0.85 (85%).",
+        "Enforced in automated eval benchmarks."
+      ],
+      "reference_answer": "The target threshold for Faithfulness is 0.85 (85%) or higher.",
+      "expected_sources": [
+        "Evaluation Suite Parameters"
+      ]
+    },
+    {
+      "id": "eval_mem_023",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is the acceptable maximum Hallucination Rate for ChatBud?",
+      "ground_truth_context": [
+        "Eval memory: Hallucination rate must stay at or below 0.08 (8%).",
+        "Calculated as unsupported claims / total claims."
+      ],
+      "reference_answer": "The maximum acceptable Hallucination Rate is 0.08 (8%).",
+      "expected_sources": [
+        "Evaluation Suite Parameters"
+      ]
+    },
+    {
+      "id": "eval_mem_024",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What package formats markdown responses in ChatBud?",
+      "ground_truth_context": [
+        "UI dependency: Markdown rendering uses flutter_markdown_plus ^1.0.12.",
+        "Supports code highlighting and inline links."
+      ],
+      "reference_answer": "Markdown messages are formatted using flutter_markdown_plus.",
+      "expected_sources": [
+        "Dependencies Vault"
+      ]
+    },
+    {
+      "id": "eval_mem_025",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "Where are memory vectors saved on device?",
+      "ground_truth_context": [
+        "Storage memory: User memories and vectors are persisted as JSON objects in SharedPreferences.",
+        "Key: chatbud_user_memories_vault."
+      ],
+      "reference_answer": "Memory vectors and facts are stored as JSON entries in local SharedPreferences.",
+      "expected_sources": [
+        "Local Storage Memory"
+      ]
+    },
+    {
+      "id": "eval_per_001",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should we design a clean event-driven architecture in Flutter?",
+      "ground_truth_context": [
+        "Athena System Architect principle: Decouple UI from business logic using unidirectional data flow and Service Locator or Bloc/Provider.",
+        "Domain entities should remain pure Dart without Flutter SDK dependencies."
+      ],
+      "reference_answer": "Adopt a clean layered architecture: pure Dart domain models, decoupled business logic via Service Locator or ValueNotifiers, and responsive UI layers.",
+      "expected_sources": [
+        "Athena System Architect",
+        "Clean Architecture Standards"
+      ]
+    },
+    {
+      "id": "eval_per_002",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What are the top three threat vectors for client-side API keys?",
+      "ground_truth_context": [
+        "Cipher AppSec guideline: Reverse engineering binaries via APK decompilation, man-in-the-middle network interception, and source repository leaks.",
+        "Remediation: Use backend proxies, App Check, and encrypted secure storage."
+      ],
+      "reference_answer": "The top three threats are binary reverse engineering, unpinned network interception, and hardcoded repository leaks.",
+      "expected_sources": [
+        "Cipher AppSec Specialist"
+      ]
+    },
+    {
+      "id": "eval_per_003",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How do I answer tell me about a time you failed in a behavioral interview?",
+      "ground_truth_context": [
+        "Harper HR Coach framework: Use the STAR method (Situation, Task, Action, Result) with strong focus on personal accountability and constructive learnings.",
+        "Never blame teammates; demonstrate mature self-reflection."
+      ],
+      "reference_answer": "Structure your answer using STAR: clearly state the situation, own your mistake, explain corrective actions, and emphasize permanent learnings.",
+      "expected_sources": [
+        "Harper HR Coach"
+      ]
+    },
+    {
+      "id": "eval_per_004",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How do I quantify achievements on a software engineering resume?",
+      "ground_truth_context": [
+        "Leo Career Coach rule: Use Google's X-Y-Z formula: Accomplished [X] as measured by [Y], by doing [Z].",
+        "Replace vague adjectives with measurable latency, cost, or revenue improvements."
+      ],
+      "reference_answer": "Apply the X-Y-Z formula: Accomplished [X], measured by [Y] percentage/metric, by implementing [Z].",
+      "expected_sources": [
+        "Leo Career Coach"
+      ]
+    },
+    {
+      "id": "eval_per_005",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How does Marcus Aurelius advise approaching difficult colleagues?",
+      "ground_truth_context": [
+        "Marcus Stoic philosophy: Meditations Book 2.1: People are sometimes ungrateful or obstinate; remember they are part of common nature and focus solely on your own virtue.",
+        "You cannot control others' actions, only your own response."
+      ],
+      "reference_answer": "Marcus reminds us that others may act uncooperatively out of ignorance; do not take offense, but remain steadfast in your own reasoned virtue.",
+      "expected_sources": [
+        "Marcus Stoic Philosopher",
+        "Meditations 2.1"
+      ]
+    },
+    {
+      "id": "eval_per_006",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should a technology startup craft its brand narrative?",
+      "ground_truth_context": [
+        "Nova Creative Strategist method: Anchor the story on the villain (the friction), the hero (the customer), and your product as the magical enabler.",
+        "Build emotional resonance before listing feature specifications."
+      ],
+      "reference_answer": "Nova advises anchoring the story on the friction or villain, the customer as the hero, and your product as the magical enabler.",
+      "expected_sources": [
+        "Nova Creative Strategist"
+      ]
+    },
+    {
+      "id": "eval_per_007",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What is the recommended approach for handling state in large Flutter apps?",
+      "ground_truth_context": [
+        "Athena guidance: Choose predictable reactive state management (ChangeNotifier, ValueNotifier, or BLoC) and avoid deep widget tree prop drilling.",
+        "Keep state close to where it is consumed."
+      ],
+      "reference_answer": "Use predictable reactive state containers (ValueNotifiers or BLoC) with strict separation between ephemeral UI state and global application state.",
+      "expected_sources": [
+        "Athena System Architect"
+      ]
+    },
+    {
+      "id": "eval_per_008",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What are the risks of using unsafe deserialization in REST APIs?",
+      "ground_truth_context": [
+        "Cipher AppSec: Arbitrary object injection can lead to remote code execution (RCE) and denial of service.",
+        "Always enforce strict schema validation and avoid generic deserializers."
+      ],
+      "reference_answer": "Unsafe deserialization can allow attackers to inject malicious objects leading to remote code execution; always enforce strict schema validation.",
+      "expected_sources": [
+        "Cipher AppSec Specialist"
+      ]
+    },
+    {
+      "id": "eval_per_009",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should I address a 6-month employment gap in a tech interview?",
+      "ground_truth_context": [
+        "Harper HR advice: Be transparent, frame the gap around intentional personal development, family priorities, or technical upskilling.",
+        "Show that your professional drive remained active."
+      ],
+      "reference_answer": "Address the gap transparently by highlighting constructive activities such as skill development, personal projects, or family commitments.",
+      "expected_sources": [
+        "Harper HR Coach"
+      ]
+    },
+    {
+      "id": "eval_per_010",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What verbs make bullet points stronger on a developer resume?",
+      "ground_truth_context": [
+        "Leo Career Coach: Use strong action verbs like Architected, Reduced, Accelerated, Spearheaded, Optimized, Engineered instead of Assisted or Worked on."
+      ],
+      "reference_answer": "Use decisive action verbs such as Architected, Spearheaded, Optimized, Automated, and Deployed to convey clear ownership.",
+      "expected_sources": [
+        "Leo Career Coach"
+      ]
+    },
+    {
+      "id": "eval_per_011",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How can a leader maintain mental equilibrium during system outages?",
+      "ground_truth_context": [
+        "Marcus Stoic wisdom: Differentiate between what is within your direct control (your engineering decisions) and external chaos.",
+        "Panic resolves nothing; methodical action restores order."
+      ],
+      "reference_answer": "Focus exclusively on what you can control: methodical incident response, transparent communication, and calm triage.",
+      "expected_sources": [
+        "Marcus Stoic Philosopher"
+      ]
+    },
+    {
+      "id": "eval_per_012",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What makes a technical hook compelling in content marketing?",
+      "ground_truth_context": [
+        "Nova Brand principle: Lead with a counter-intuitive insight, a high-stakes metric, or a common pain point that disrupts conventional wisdom."
+      ],
+      "reference_answer": "Nova recommends leading with a counter-intuitive insight, a high-stakes metric, or a common pain point that disrupts conventional wisdom.",
+      "expected_sources": [
+        "Nova Creative Strategist"
+      ]
+    },
+    {
+      "id": "eval_per_013",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should a Flutter mobile app securely store JWT auth tokens?",
+      "ground_truth_context": [
+        "Cipher security baseline: Use flutter_secure_storage backed by iOS Keychain and Android Keystore with EncryptedSharedPreferences.",
+        "Never store sensitive credentials in plain SharedPreferences."
+      ],
+      "reference_answer": "Store sensitive tokens using flutter_secure_storage to leverage hardware-backed iOS Keychain and Android Keystore encryption.",
+      "expected_sources": [
+        "Cipher AppSec Specialist"
+      ]
+    },
+    {
+      "id": "eval_per_014",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What is the best way to negotiate a salary offer after receiving a job offer?",
+      "ground_truth_context": [
+        "Harper HR strategy: Express enthusiasm first, base your counter-offer on market benchmarking data, and negotiate total compensation including equity.",
+        "Maintain collaborative, respectful tone."
+      ],
+      "reference_answer": "Express genuine gratitude, reference verified market rate data for your skill level, and propose a specific total compensation target.",
+      "expected_sources": [
+        "Harper HR Coach"
+      ]
+    },
+    {
+      "id": "eval_per_015",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "Should I put a summary section on a 2-page software engineer resume?",
+      "ground_truth_context": [
+        "Leo Career Coach rule: For under 5 years of experience, omit summary or keep it to 2 laser-focused lines highlighting key domains and measurable impacts."
+      ],
+      "reference_answer": "Keep it to two crisp lines highlighting your core specialization and signature technical impact, or omit it in favor of bullet points.",
+      "expected_sources": [
+        "Leo Career Coach"
+      ]
+    },
+    {
+      "id": "eval_per_016",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How do you prevent SQL injection in modern full-stack systems?",
+      "ground_truth_context": [
+        "Cipher AppSec: Use parameterized queries, prepared statements, and ORMs with strict type binding; never concatenate raw user input into SQL strings."
+      ],
+      "reference_answer": "Exclusively utilize parameterized queries, prepared statements, and object-relational mapping with strict input validation.",
+      "expected_sources": [
+        "Cipher AppSec Specialist"
+      ]
+    },
+    {
+      "id": "eval_per_017",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should Microservices communicate to minimize runtime coupling?",
+      "ground_truth_context": [
+        "Athena Architecture rule: Prefer asynchronous event publishing (Kafka, RabbitMQ, Pub/Sub) for inter-service workflows over synchronous HTTP chains."
+      ],
+      "reference_answer": "Athena recommends asynchronous event publishing using Kafka, RabbitMQ, or Pub/Sub to decouple workflows instead of synchronous HTTP chains.",
+      "expected_sources": [
+        "Athena System Architect"
+      ]
+    },
+    {
+      "id": "eval_per_018",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What questions should a candidate ask the interviewer at the end of an interview?",
+      "ground_truth_context": [
+        "Harper HR advice: Ask questions that reveal team culture and technical autonomy, such as What does success look like in the first 90 days?"
+      ],
+      "reference_answer": "Ask high-signal questions about team decision-making, code review culture, and what concrete milestones define success in 90 days.",
+      "expected_sources": [
+        "Harper HR Coach"
+      ]
+    },
+    {
+      "id": "eval_per_019",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should I present open-source contributions on my portfolio?",
+      "ground_truth_context": [
+        "Leo Career advice: Link directly to merged pull requests, list technologies used, and articulate the bug or feature resolved with user impact."
+      ],
+      "reference_answer": "Leo advises linking directly to merged pull requests, listing technologies used, and articulating the bug or feature resolved with user impact.",
+      "expected_sources": [
+        "Leo Career Coach"
+      ]
+    },
+    {
+      "id": "eval_per_020",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What is Epictetus's core dichotomy of control?",
+      "ground_truth_context": [
+        "Marcus / Stoic philosophy: Some things are up to us (opinions, intentions, desires) and others are not (reputation, circumstances, other people's choices)."
+      ],
+      "reference_answer": "Marcus and Epictetus teach that some things are up to us like our opinions and choices, while external outcomes and others actions are not.",
+      "expected_sources": [
+        "Marcus Stoic Philosopher",
+        "Enchiridion 1.1"
+      ]
+    },
+    {
+      "id": "eval_per_021",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How do you build a cohesive developer brand on GitHub?",
+      "ground_truth_context": [
+        "Nova Brand advice: Write crisp READMEs with architectural diagrams, live demo links, comprehensive tests, and clean visual assets."
+      ],
+      "reference_answer": "Maintain polished READMEs with clear architecture diagrams, quickstart steps, verified tests, and live demo links.",
+      "expected_sources": [
+        "Nova Creative Strategist"
+      ]
+    },
+    {
+      "id": "eval_per_022",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What are the key differences between monolithic and microservice architectures?",
+      "ground_truth_context": [
+        "Athena Systems: Monoliths offer simpler deployments and unified transactions; microservices offer independent scalability at the cost of network complexity."
+      ],
+      "reference_answer": "Athena explains that monoliths offer simpler deployments and unified transactions, while microservices offer independent scalability at the cost of network complexity.",
+      "expected_sources": [
+        "Athena System Architect"
+      ]
+    },
+    {
+      "id": "eval_per_023",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What is Content Security Policy (CSP) and why is it vital for Flutter Web?",
+      "ground_truth_context": [
+        "Cipher AppSec: CSP headers restrict origins for scripts, styles, and network connections to protect against cross-site scripting (XSS) attacks."
+      ],
+      "reference_answer": "CSP defines allowlisted sources for scripts and network calls, preventing malicious code injection and XSS exploits in web applications.",
+      "expected_sources": [
+        "Cipher AppSec Specialist"
+      ]
+    },
+    {
+      "id": "eval_per_024",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should an engineering manager handle underperforming team members?",
+      "ground_truth_context": [
+        "Harper HR leadership: Provide early, specific, empathetic feedback; identify root blockers; and establish clear 30-day recovery milestones."
+      ],
+      "reference_answer": "Deliver constructive feedback with clear examples, identify systemic blockers, and co-design measurable short-term milestones.",
+      "expected_sources": [
+        "Harper HR Coach"
+      ]
+    },
+    {
+      "id": "eval_per_025",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What is the best way to describe architectural refactoring on a resume?",
+      "ground_truth_context": [
+        "Leo Career advice: Highlight the business problem (e.g. 5x faster build times, zero regression outages) rather than just the code rewrite."
+      ],
+      "reference_answer": "Leo advises highlighting the measurable business problem, such as 5x faster build times or zero regression outages, rather than only the code rewrite.",
+      "expected_sources": [
+        "Leo Career Coach"
+      ]
+    }
+  ]
+}

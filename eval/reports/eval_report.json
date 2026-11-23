@@ -1,0 +1,1770 @@
+{
+  "summary": {
+    "mode": "dataset_check",
+    "total_queries": 100,
+    "passed_queries": 100,
+    "pass_rate_percentage": 100.0,
+    "elapsed_seconds": 0.0,
+    "overall_status": "DATASET_OK",
+    "metrics": {
+      "faithfulness": null,
+      "answer_relevance": null,
+      "context_precision": null,
+      "hallucination_rate": null,
+      "reference_support": 1.0
+    },
+    "thresholds": {
+      "faithfulness": 0.85,
+      "answer_relevance": 0.85,
+      "context_precision": 0.8,
+      "hallucination_rate": 0.08,
+      "reference_support": 0.85
+    },
+    "dataset_problems": [],
+    "responses_metadata": {}
+  },
+  "domains": {
+    "exeter_academic": {
+      "total": 25,
+      "passed": 25,
+      "pass_rate": 100.0,
+      "faithfulness": null,
+      "answer_relevance": null,
+      "context_precision": null,
+      "hallucination_rate": null,
+      "reference_support": 1.0
+    },
+    "live_public_api": {
+      "total": 25,
+      "passed": 25,
+      "pass_rate": 100.0,
+      "faithfulness": null,
+      "answer_relevance": null,
+      "context_precision": null,
+      "hallucination_rate": null,
+      "reference_support": 1.0
+    },
+    "memory_vault": {
+      "total": 25,
+      "passed": 25,
+      "pass_rate": 100.0,
+      "faithfulness": null,
+      "answer_relevance": null,
+      "context_precision": null,
+      "hallucination_rate": null,
+      "reference_support": 1.0
+    },
+    "persona_specialist": {
+      "total": 25,
+      "passed": 25,
+      "pass_rate": 100.0,
+      "faithfulness": null,
+      "answer_relevance": null,
+      "context_precision": null,
+      "hallucination_rate": null,
+      "reference_support": 1.0
+    }
+  },
+  "results": [
+    {
+      "id": "eval_api_001",
+      "category": "live_public_api",
+      "persona_id": "frankfurter",
+      "query": "What is the current ECB exchange rate from EUR to USD?",
+      "response": null,
+      "reference_answer": "According to the European Central Bank reference rate via the Frankfurter API, 1 EUR equals approximately 1.0845 USD.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_002",
+      "category": "live_public_api",
+      "persona_id": "frankfurter",
+      "query": "What is the exchange rate between GBP and EUR?",
+      "response": null,
+      "reference_answer": "Based on the European Central Bank data provided by Frankfurter, 1 GBP is approximately 1.1680 EUR.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_003",
+      "category": "live_public_api",
+      "persona_id": "weather_rag",
+      "query": "What is the current weather forecast for London?",
+      "response": null,
+      "reference_answer": "In London, the current temperature is 14.2\u00b0C with 78% relative humidity, 12 km/h winds, and partly cloudy skies.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_004",
+      "category": "live_public_api",
+      "persona_id": "weather_rag",
+      "query": "Can you check the weather in Tokyo right now?",
+      "response": null,
+      "reference_answer": "The weather in Tokyo is currently clear with a temperature of 19.5\u00b0C and gentle winds at 8 km/h.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_005",
+      "category": "live_public_api",
+      "persona_id": "openalex_rag",
+      "query": "Who are the authors of the seminal Transformer paper Attention Is All You Need?",
+      "response": null,
+      "reference_answer": "The Transformer paper Attention Is All You Need was authored by Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin in 2017.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_006",
+      "category": "live_public_api",
+      "persona_id": "openalex_rag",
+      "query": "What is the publication year and citation count for the BERT paper in OpenAlex?",
+      "response": null,
+      "reference_answer": "The BERT paper was published in 2019 at NAACL-HLT by Devlin et al. and has accumulated over 85,000 citations in OpenAlex.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_007",
+      "category": "live_public_api",
+      "persona_id": "eol_rag",
+      "query": "Is Flutter 3.24 currently supported or past its end of life?",
+      "response": null,
+      "reference_answer": "According to endoflife.date, Flutter 3.24 was released in August 2024 and is within active community support on the stable branch.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_008",
+      "category": "live_public_api",
+      "persona_id": "eol_rag",
+      "query": "When does Node.js 18 reach End of Life?",
+      "response": null,
+      "reference_answer": "As documented on endoflife.date, Node.js 18 reached End of Life on April 30, 2025, and users should upgrade to Node 20 or 22 LTS.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_009",
+      "category": "live_public_api",
+      "persona_id": "eol_rag",
+      "query": "When is Python 3.9 scheduled for End of Life?",
+      "response": null,
+      "reference_answer": "Python 3.9 reaches official End of Life in October 2025 according to the Python release schedule on endoflife.date.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_010",
+      "category": "live_public_api",
+      "persona_id": "osv_rag",
+      "query": "What is CVE-2024-3094 related to?",
+      "response": null,
+      "reference_answer": "CVE-2024-3094 is a critical CVSS 10.0 backdoor identified in XZ Utils versions 5.6.0 and 5.6.1 targeting SSH daemon authentication.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_011",
+      "category": "live_public_api",
+      "persona_id": "osv_rag",
+      "query": "What does Google OSV report for Log4Shell vulnerability CVE-2021-44228?",
+      "response": null,
+      "reference_answer": "Google OSV classifies CVE-2021-44228 (Log4Shell) as a critical remote code execution vulnerability in Apache Log4j fixed in version 2.15.0 and above.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_012",
+      "category": "live_public_api",
+      "persona_id": "lexicon_rag",
+      "query": "What are synonyms and semantic triggers for resilient according to Datamuse?",
+      "response": null,
+      "reference_answer": "According to Datamuse, synonyms for resilient include robust, adaptable, hardy, flexible, and tough, representing strength and recovery.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_013",
+      "category": "live_public_api",
+      "persona_id": "lexicon_rag",
+      "query": "What words rhyme with inspire according to lexical search?",
+      "response": null,
+      "reference_answer": "Words that rhyme with inspire include aspire, desire, admire, fire, conspire, and require.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_014",
+      "category": "live_public_api",
+      "persona_id": "holiday_rag",
+      "query": "What are the main public bank holidays in England for late spring?",
+      "response": null,
+      "reference_answer": "England observes two statutory bank holidays in late spring: the Early May Bank Holiday and the Spring Bank Holiday at the end of May.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_015",
+      "category": "live_public_api",
+      "persona_id": "holiday_rag",
+      "query": "When is New Year Day celebrated in public holiday schedules?",
+      "response": null,
+      "reference_answer": "New Year Day is celebrated globally on January 1, with substitute bank holiday observances when it coincides with a weekend.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_016",
+      "category": "live_public_api",
+      "persona_id": "jobs_rag",
+      "query": "What remote software roles are currently listed on Arbeitnow?",
+      "response": null,
+      "reference_answer": "Arbeitnow lists remote engineering roles including Senior Flutter Engineer, Backend Python Developer, and React Specialist with direct apply options.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_017",
+      "category": "live_public_api",
+      "persona_id": "public_api_rag",
+      "query": "What nutritional values does Open Food Facts report for rolled oats?",
+      "response": null,
+      "reference_answer": "According to Open Food Facts, 100g of rolled oats provides 389 kcal, 16.9g protein, 66.3g carbs, and 10.6g dietary fiber with a Nutri-Score of A.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_018",
+      "category": "live_public_api",
+      "persona_id": "wiki_rag",
+      "query": "What is the Wikipedia summary for the city of Exeter, Devon?",
+      "response": null,
+      "reference_answer": "Exeter is a historic cathedral city in Devon, England, situated along the River Exe and renowned for Exeter Cathedral and Roman city walls.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_019",
+      "category": "live_public_api",
+      "persona_id": "wiki_rag",
+      "query": "What is the Wikipedia overview of the Dart programming language?",
+      "response": null,
+      "reference_answer": "Dart is Google's open-source, client-optimized programming language featuring AOT compilation to native machine code and JIT compilation for hot reload.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_020",
+      "category": "live_public_api",
+      "persona_id": "frankfurter",
+      "query": "What is the exchange rate from USD to JPY according to Frankfurter?",
+      "response": null,
+      "reference_answer": "The European Central Bank benchmark via Frankfurter shows 1 USD is approximately 154.20 JPY.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_021",
+      "category": "live_public_api",
+      "persona_id": "weather_rag",
+      "query": "What is the temperature and humidity in Berlin right now?",
+      "response": null,
+      "reference_answer": "In Berlin, the temperature is currently 11.8\u00b0C with 65% humidity and winds around 15 km/h.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_022",
+      "category": "live_public_api",
+      "persona_id": "openalex_rag",
+      "query": "Who published the ResNet architecture and how many citations does it have?",
+      "response": null,
+      "reference_answer": "The ResNet paper was published in CVPR 2016 by Kaiming He et al. and has amassed over 180,000 citations in OpenAlex.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_023",
+      "category": "live_public_api",
+      "persona_id": "eol_rag",
+      "query": "What is the end of life date for PostgreSQL 12?",
+      "response": null,
+      "reference_answer": "PostgreSQL 12 officially reached End of Life on November 14, 2024, receiving no further security patches.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_024",
+      "category": "live_public_api",
+      "persona_id": "osv_rag",
+      "query": "What severity is assigned to CVE-2023-4863 in libwebp by Google OSV?",
+      "response": null,
+      "reference_answer": "CVE-2023-4863 in libwebp is classified with a CVSS 8.8 High severity due to a heap buffer overflow in Huffman coding.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_api_025",
+      "category": "live_public_api",
+      "persona_id": "public_api_rag",
+      "query": "What are the main ingredients in hazelnut spread per Open Food Facts?",
+      "response": null,
+      "reference_answer": "Open Food Facts lists sugar, palm oil, hazelnuts (13%), skimmed milk, and cocoa as primary ingredients, yielding a Nutri-Score of E.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_001",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What are the opening hours for the Forum Library at the University of Exeter?",
+      "response": null,
+      "reference_answer": "The Forum Library on Streatham Campus is open 24 hours a day, 7 days a week during academic terms with student card access.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_002",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "Where is the Sanctuary study space located on Streatham Campus?",
+      "response": null,
+      "reference_answer": "The Sanctuary is situated below the Great Hall on Streatham Campus, offering quiet drop-in study desks with power sockets.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_003",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "How do I travel between Streatham Campus and St Luke's Campus?",
+      "response": null,
+      "reference_answer": "You can travel between Streatham and St Luke's via the Stagecoach D or H bus routes, or via a 30-minute walk / 15-minute cycle.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_004",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What support does the Exeter Guild Advice team provide to students?",
+      "response": null,
+      "reference_answer": "The Guild Advice team offers free, independent, confidential assistance for academic appeals, accommodation issues, and student rights.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_005",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "When do Term 2 exams typically take place at Exeter?",
+      "response": null,
+      "reference_answer": "Term 2 assessments generally take place throughout May and early June, with individualized schedules published in April on MyExeter.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_006",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What resources are available at the St Luke's Haighton Library?",
+      "response": null,
+      "reference_answer": "The Haighton Library at St Luke's focuses on Education, Sports, and Health Sciences, providing study spaces and specialized research texts.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_007",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "Where can I access career appointments and CV reviews at Exeter?",
+      "response": null,
+      "reference_answer": "Exeter Career Zone operates from the Forum Seminar Wing and Handshake, offering personalized CV reviews and interview preparation.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_008",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What is the procedure for requesting an assessment extension or mitigation?",
+      "response": null,
+      "reference_answer": "Mitigation applications are submitted through Exeter's online portal prior to assessment deadlines with supporting evidence of exceptional circumstances.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_009",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What are the Streatham Sports Park facilities?",
+      "response": null,
+      "reference_answer": "The Sports Park at Streatham Campus features the Russell Seal Fitness Centre, indoor tennis courts, all-weather pitches, and squash facilities.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_010",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "Where is the Student Health Centre on Streatham Campus?",
+      "response": null,
+      "reference_answer": "The Student Health Centre is located in Reed Mews on Streatham Drive, offering full NHS general practice medical care.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_011",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What are the opening times for the Forum South Cloisters study space at St Luke's?",
+      "response": null,
+      "reference_answer": "South Cloisters at St Luke's provides study suites and PC clusters open from 08:00 to 22:00 on weekdays with card access.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_012",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "How does the Exeter Grand Challenges programme work?",
+      "response": null,
+      "reference_answer": "Grand Challenges is an interdisciplinary project week where undergraduates collaborate with academics and industry experts on pressing global challenges.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_013",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What is the University of Exeter Student Information Desk (SID)?",
+      "response": null,
+      "reference_answer": "SID in the Forum is the one-stop query desk for student documentation, fee payments, visa advice, and general administrative services.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_014",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "Where can students find quiet reflection or prayer rooms on Streatham campus?",
+      "response": null,
+      "reference_answer": "Prayer and quiet reflection spaces are located at the Old Library Multi-Faith Chaplaincy and Mary Harris Memorial Chapel with ablution facilities.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_015",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What computer clusters are available 24/7 on Streatham Campus?",
+      "response": null,
+      "reference_answer": "24/7 computers are located inside the Forum Library and Laver Building with access to university analytical and engineering software.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_016",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "How do postgraduate research students book desk space in the Research Commons?",
+      "response": null,
+      "reference_answer": "Postgraduate researchers can access dedicated silent workspaces in the Research Commons on the second floor of the Old Library.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_017",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What food and dining options are located in Devonshire House and the Forum?",
+      "response": null,
+      "reference_answer": "Dining options include Pret A Manger, The Terrace, and the Ram Bar in Devonshire House, catering to vegan, halal, and gluten-free diets.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_018",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What printing and binding services exist on campus for dissertation submission?",
+      "response": null,
+      "reference_answer": "Exeter Print Services in the Old Library offers professional dissertation binding and poster printing, alongside campus-wide follow-me print units.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_019",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "Where is the Bill Douglas Cinema Museum located?",
+      "response": null,
+      "reference_answer": "The Bill Douglas Cinema Museum is housed in the Old Library on Streatham Campus, exhibiting 80,000+ cinema and pre-cinema artefacts.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_020",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What accommodation villages are located on East Park and Birks Grange?",
+      "response": null,
+      "reference_answer": "East Park offers en-suite rooms near the Sports Park, while Birks Grange Village provides catered and self-catered accommodation on New North Road.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_021",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What student societies exist for computing and software engineering at Exeter?",
+      "response": null,
+      "reference_answer": "The Exeter Computer Science Society (ExCS) organizes hackathons, technical interview sessions, and speaker panels through the Students' Guild.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_022",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What mental health support is provided by Exeter Wellbeing Services?",
+      "response": null,
+      "reference_answer": "Wellbeing Services offers CBT, counselling, and psychological support at Reed Hall, supported by the 24/7 Spectrum Life crisis helpline.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_023",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "How do students access digital library resources off campus?",
+      "response": null,
+      "reference_answer": "Digital journals and databases are accessible off-campus via institutional Single Sign-On (Shibboleth) through the Exeter Library search portal.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_024",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "Where is the Innovation Centre located on Streatham Campus?",
+      "response": null,
+      "reference_answer": "The Innovation Centre is located on Rennes Drive, hosting SETsquared startup incubation and industry-academic research partnerships.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_exe_025",
+      "category": "exeter_academic",
+      "persona_id": "exeter",
+      "query": "What is the Streatham Campus arboretum and botanical garden status?",
+      "response": null,
+      "reference_answer": "Streatham Campus holds official botanic garden status, featuring over 10,000 specimen trees and subtropical plants across the grounds.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_001",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is my preferred programming language for mobile development?",
+      "response": null,
+      "reference_answer": "Your preferred mobile development stack is Flutter and Dart, as saved in your Memory Vault.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_002",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "Do you remember which university I attended?",
+      "response": null,
+      "reference_answer": "Yes, you attended the University of Exeter studying Computer Science.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_003",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What frontend framework did I choose for our web showcase?",
+      "response": null,
+      "reference_answer": "You chose Flutter Web complemented by a dedicated responsive HTML/CSS portfolio companion website.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_004",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is my preferred theme mode in ChatBud?",
+      "response": null,
+      "reference_answer": "Your preference is Dark Mode using the Soft Minimalist Slate color palette.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_005",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "Do I have an APILayer key configured?",
+      "response": null,
+      "reference_answer": "Yes, you have an APILayer key configured in your AI settings for high-volume conversion.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_006",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What database do we use for the cloud backend?",
+      "response": null,
+      "reference_answer": "We use Cloud Firestore for cloud sync, backed by local SharedPreferences for offline caching.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_007",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "Which Gemini models do I like to switch between?",
+      "response": null,
+      "reference_answer": "You typically switch between gemini-3.1-flash-lite, gemini-3.8-flash, and gemini-2.5-flash.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_008",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is the main goal of the ChatBud repository?",
+      "response": null,
+      "reference_answer": "The main goal is to serve as a non-commercial portfolio showcase demonstrating multi-agent orchestration and Grounded RAG.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_009",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "Do I prefer long explanations or concise bullet points?",
+      "response": null,
+      "reference_answer": "You prefer concise, clear answers with actionable code examples and structured bullet points.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_010",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What vector embedding technique is used by MemoryService?",
+      "response": null,
+      "reference_answer": "MemoryService utilizes a pure-Dart lexical term embedder with L2-normalized cosine similarity running fully on-device.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_011",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is my stance on commercial monetization for this repo?",
+      "response": null,
+      "reference_answer": "Your established policy is that ChatBud is strictly non-commercial and published as an open-source technical proof-of-concept.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_012",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What CI/CD platform is configured for ChatBud?",
+      "response": null,
+      "reference_answer": "ChatBud uses GitHub Actions for continuous integration, running static analysis, test suites, and security scans.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_013",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What testing framework is used for Dart unit tests?",
+      "response": null,
+      "reference_answer": "Testing is implemented using package:flutter_test with http.testing and mock initializers.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_014",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "How many personas are available in the Persona Hub?",
+      "response": null,
+      "reference_answer": "There are 16 curated personas available in the Persona Hub across diverse specialist domains.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_015",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What keybinding sends messages on desktop?",
+      "response": null,
+      "reference_answer": "On desktop, pressing Enter sends the message immediately, while Shift+Enter inserts a newline.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_016",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is the maximum message bubble width on desktop screens?",
+      "response": null,
+      "reference_answer": "Message bubbles are constrained to a maximum width of 680px on desktop screens.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_017",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What happens when I chat in Zero-Login Guest Mode?",
+      "response": null,
+      "reference_answer": "Guest mode lets you chat immediately with full local storage persistence without requiring account registration.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_018",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is my primary role in software development?",
+      "response": null,
+      "reference_answer": "You are an AI Engineer and Full-Stack Mobile Architect specializing in Flutter and agentic systems.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_019",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "Which icon library is used across ChatBud?",
+      "response": null,
+      "reference_answer": "ChatBud combines cupertino_icons and Material Design symbols.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_020",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is the cache TTL for retrieved public API contexts?",
+      "response": null,
+      "reference_answer": "Retrieved public API context is cached in memory for 10 minutes.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_021",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "How are ungrounded questions handled when public APIs return empty results?",
+      "response": null,
+      "reference_answer": "If an API returns no context, the system gracefully falls back to Wikipedia or base model knowledge without crashing.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_022",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is the target threshold for Faithfulness in our eval suite?",
+      "response": null,
+      "reference_answer": "The target threshold for Faithfulness is 0.85 (85%) or higher.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_023",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What is the acceptable maximum Hallucination Rate for ChatBud?",
+      "response": null,
+      "reference_answer": "The maximum acceptable Hallucination Rate is 0.08 (8%).",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_024",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "What package formats markdown responses in ChatBud?",
+      "response": null,
+      "reference_answer": "Markdown messages are formatted using flutter_markdown_plus.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_mem_025",
+      "category": "memory_vault",
+      "persona_id": "memory_agent",
+      "query": "Where are memory vectors saved on device?",
+      "response": null,
+      "reference_answer": "Memory vectors and facts are stored as JSON entries in local SharedPreferences.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_001",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should we design a clean event-driven architecture in Flutter?",
+      "response": null,
+      "reference_answer": "Adopt a clean layered architecture: pure Dart domain models, decoupled business logic via Service Locator or ValueNotifiers, and responsive UI layers.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_002",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What are the top three threat vectors for client-side API keys?",
+      "response": null,
+      "reference_answer": "The top three threats are binary reverse engineering, unpinned network interception, and hardcoded repository leaks.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_003",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How do I answer tell me about a time you failed in a behavioral interview?",
+      "response": null,
+      "reference_answer": "Structure your answer using STAR: clearly state the situation, own your mistake, explain corrective actions, and emphasize permanent learnings.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_004",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How do I quantify achievements on a software engineering resume?",
+      "response": null,
+      "reference_answer": "Apply the X-Y-Z formula: Accomplished [X], measured by [Y] percentage/metric, by implementing [Z].",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_005",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How does Marcus Aurelius advise approaching difficult colleagues?",
+      "response": null,
+      "reference_answer": "Marcus reminds us that others may act uncooperatively out of ignorance; do not take offense, but remain steadfast in your own reasoned virtue.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_006",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should a technology startup craft its brand narrative?",
+      "response": null,
+      "reference_answer": "Nova advises anchoring the story on the friction or villain, the customer as the hero, and your product as the magical enabler.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_007",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What is the recommended approach for handling state in large Flutter apps?",
+      "response": null,
+      "reference_answer": "Use predictable reactive state containers (ValueNotifiers or BLoC) with strict separation between ephemeral UI state and global application state.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_008",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What are the risks of using unsafe deserialization in REST APIs?",
+      "response": null,
+      "reference_answer": "Unsafe deserialization can allow attackers to inject malicious objects leading to remote code execution; always enforce strict schema validation.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_009",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should I address a 6-month employment gap in a tech interview?",
+      "response": null,
+      "reference_answer": "Address the gap transparently by highlighting constructive activities such as skill development, personal projects, or family commitments.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_010",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What verbs make bullet points stronger on a developer resume?",
+      "response": null,
+      "reference_answer": "Use decisive action verbs such as Architected, Spearheaded, Optimized, Automated, and Deployed to convey clear ownership.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_011",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How can a leader maintain mental equilibrium during system outages?",
+      "response": null,
+      "reference_answer": "Focus exclusively on what you can control: methodical incident response, transparent communication, and calm triage.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_012",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What makes a technical hook compelling in content marketing?",
+      "response": null,
+      "reference_answer": "Nova recommends leading with a counter-intuitive insight, a high-stakes metric, or a common pain point that disrupts conventional wisdom.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_013",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should a Flutter mobile app securely store JWT auth tokens?",
+      "response": null,
+      "reference_answer": "Store sensitive tokens using flutter_secure_storage to leverage hardware-backed iOS Keychain and Android Keystore encryption.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_014",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What is the best way to negotiate a salary offer after receiving a job offer?",
+      "response": null,
+      "reference_answer": "Express genuine gratitude, reference verified market rate data for your skill level, and propose a specific total compensation target.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_015",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "Should I put a summary section on a 2-page software engineer resume?",
+      "response": null,
+      "reference_answer": "Keep it to two crisp lines highlighting your core specialization and signature technical impact, or omit it in favor of bullet points.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_016",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How do you prevent SQL injection in modern full-stack systems?",
+      "response": null,
+      "reference_answer": "Exclusively utilize parameterized queries, prepared statements, and object-relational mapping with strict input validation.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_017",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should Microservices communicate to minimize runtime coupling?",
+      "response": null,
+      "reference_answer": "Athena recommends asynchronous event publishing using Kafka, RabbitMQ, or Pub/Sub to decouple workflows instead of synchronous HTTP chains.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_018",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What questions should a candidate ask the interviewer at the end of an interview?",
+      "response": null,
+      "reference_answer": "Ask high-signal questions about team decision-making, code review culture, and what concrete milestones define success in 90 days.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_019",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should I present open-source contributions on my portfolio?",
+      "response": null,
+      "reference_answer": "Leo advises linking directly to merged pull requests, listing technologies used, and articulating the bug or feature resolved with user impact.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_020",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What is Epictetus's core dichotomy of control?",
+      "response": null,
+      "reference_answer": "Marcus and Epictetus teach that some things are up to us like our opinions and choices, while external outcomes and others actions are not.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_021",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How do you build a cohesive developer brand on GitHub?",
+      "response": null,
+      "reference_answer": "Maintain polished READMEs with clear architecture diagrams, quickstart steps, verified tests, and live demo links.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_022",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What are the key differences between monolithic and microservice architectures?",
+      "response": null,
+      "reference_answer": "Athena explains that monoliths offer simpler deployments and unified transactions, while microservices offer independent scalability at the cost of network complexity.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_023",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What is Content Security Policy (CSP) and why is it vital for Flutter Web?",
+      "response": null,
+      "reference_answer": "CSP defines allowlisted sources for scripts and network calls, preventing malicious code injection and XSS exploits in web applications.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_024",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "How should an engineering manager handle underperforming team members?",
+      "response": null,
+      "reference_answer": "Deliver constructive feedback with clear examples, identify systemic blockers, and co-design measurable short-term milestones.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    },
+    {
+      "id": "eval_per_025",
+      "category": "persona_specialist",
+      "persona_id": "specialist_agent",
+      "query": "What is the best way to describe architectural refactoring on a resume?",
+      "response": null,
+      "reference_answer": "Leo advises highlighting the measurable business problem, such as 5x faster build times or zero regression outages, rather than only the code rewrite.",
+      "metrics": {
+        "faithfulness": null,
+        "answer_relevance": null,
+        "context_precision": null,
+        "hallucination_rate": null,
+        "reference_support": 1.0
+      },
+      "passed": true,
+      "notes": "dataset check only: no model response was scored"
+    }
+  ]
+}

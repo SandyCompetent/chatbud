@@ -1,0 +1,63 @@
+name: Golden Dataset Checks
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'eval/**'
+      - 'lib/src/services/public_api_rag_service.dart'
+      - 'lib/src/services/gemini_service.dart'
+      - 'lib/src/services/chat_service.dart'
+      - 'lib/src/services/memory_service.dart'
+      - '.github/workflows/evals.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'eval/**'
+      - 'lib/src/services/**'
+  workflow_dispatch:
+
+concurrency:
+  group: "evals-${{ github.ref }}"
+  cancel-in-progress: true
+
+jobs:
+  rag-evaluation:
+    name: Golden dataset checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install Flutter Dependencies
+        run: flutter pub get
+
+      - name: Run Native Dart Evaluation Suite
+        run: flutter test test/services/rag_eval_suite_test.dart
+
+      # Dataset check only: validates the golden dataset. It does not call a model,
+      # so a pass here says nothing about answer quality. See eval/README.md.
+      - name: Golden dataset check (no model)
+        run: python3 eval/run_evals.py
+
+      - name: Upload Evaluation Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: chatbud-eval-reports
+          path: eval/reports/
+          if-no-files-found: error

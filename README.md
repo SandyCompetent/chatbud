@@ -5,7 +5,8 @@
 [![Flutter](https://img.shields.io/badge/Flutter-3.33+-02569B?logo=flutter&style=flat-square)](https://flutter.dev)
 [![Firebase AI](https://img.shields.io/badge/Firebase%20AI-Gemini%202.5%20%2F%202.0-FFA000?logo=firebase&style=flat-square)](https://firebase.google.com/docs)
 [![Grounded RAG](https://img.shields.io/badge/RAG-Public%20APIs%20%2B%20Citations-10B981?style=flat-square)](#grounded-rag-engine)
-[![Tests](https://img.shields.io/badge/Tests-159%20Passed-10B981?style=flat-square)](#testing)
+[![Tests](https://img.shields.io/badge/Tests-164%20Passed-10B981?style=flat-square)](#testing)
+[![Eval Dataset](https://img.shields.io/badge/Golden%20Eval%20Dataset-100%20queries-4F46E5?style=flat-square)](#-evaluation-suite--golden-dataset)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4F46E5.svg?style=flat-square)](LICENSE)
 
 > [!IMPORTANT]
@@ -77,7 +78,7 @@ Going beyond standard single-turn LLM wrappers, ChatBud features an **on-device 
 ## Standout Features
 
 ### 1. Grounded RAG Engine with Live Public APIs & Citations
-- **Zero-Hallucination External Grounding**: Connects directly to verified public APIs before response synthesis.
+- **External Grounding**: Connects to public APIs before response synthesis and shows source citations, so answers can be checked against their source.
 - **Supported Live Data Sources**:
   - **Foreign Exchange & Currency**: Real-time European Central Bank rates via Frankfurter and high-volume APILayer conversion.
   - **Global Weather**: Live temperatures, humidity, wind conditions, and forecasts via Open-Meteo.
@@ -158,18 +159,93 @@ lib/
         ├── conversation_screen.dart# Real-time token streaming chat interface
         ├── memory_page.dart       # Local Vector Memory Vault
         └── contact_page.dart      # Profile, BYOK Gemini settings, APILayer key, theme
-test/                              # 159 automated unit and widget tests
+test/                              # 164 automated unit, widget & eval-dataset tests
+eval/                              # Evaluation suite (Ragas-inspired heuristics, Promptfoo config)
+├── data/                          # 100-query golden ground truth dataset
+├── src/                           # Faithfulness, Relevance, Precision & Hallucination engines
+├── reports/                       # Interactive HTML dashboard, JSON & Markdown summaries
+├── promptfooconfig.yaml           # Promptfoo test suite configuration
+└── run_evals.py                   # Automated CLI evaluation runner
 portfolio/                         # Responsive portfolio website (light & dark)
+```
+
+---
+
+## 📊 Evaluation Suite & Golden Dataset
+
+ChatBud ships a **100-query golden dataset** (25 each for live public APIs, Exeter campus, memory vault and specialist personas) and a small evaluation harness in [`eval/`](eval/). Each golden item has a question, grounding context and a reference answer.
+
+> The harness has two modes, and only the second says anything about answer quality. Results from one run of each of two models are below. Read the caveats under them before quoting any number.
+
+| Mode | Command | What it tells you |
+| :--- | :--- | :--- |
+| **Dataset check** (default) | `python3 eval/run_evals.py` | The dataset is well formed (100 unique queries, 25 per domain) and every reference answer is supported by its own context. **It does not measure ChatBud or any model.** |
+| **Model responses** | `export GEMINI_API_KEY=...`<br>`python3 eval/generate_responses.py`<br>`python3 eval/run_evals.py --responses eval/data/model_responses.json` | Faithfulness, answer relevance and hallucination rate of what a Gemini model actually answered, given the golden context. |
+
+### Results (23 Nov 2026, single run per model, temperature 0)
+
+Each model was given the golden grounding context and asked to answer from it.
+
+| Model | Faithfulness | Hallucination rate |
+| :--- | :---: | :---: |
+| `gemini-3.5-flash-lite` (Gemini API) | **0.972** | 0.028 |
+| `qwen3:14b` (Q4_K_M, local via Ollama, thinking off) | **0.925** | 0.075 |
+
+Faithfulness by domain:
+
+| Domain | gemini-3.5-flash-lite | qwen3:14b |
+| :--- | :---: | :---: |
+| Live public APIs | 1.00 | 1.00 |
+| Exeter academic and campus | 1.00 | 0.96 |
+| Memory vault | 0.96 | 0.96 |
+| Specialist personas | 0.93 | **0.78** |
+
+What stands out: both models stay close to the context when it contains concrete facts. On the persona prompts, where the context is a one-line rule, `qwen3:14b` often invents extra material (for example a made-up interview story for the STAR question). That is a real grounding failure, not a metric artefact.
+
+Answer relevance is not reported here because the word-overlap metric rewards copying the reference wording (see below). The per-run reports are in [`eval/reports/`](eval/reports/).
+
+**Caveats.** One run per model. The metric rules were adjusted after the first run (numbers repeated from the question are allowed, and self-introductions are not scored as claims), so these scores are post-hoc. The metric is a word-overlap heuristic, and retrieval from the live APIs was not evaluated. The app's own default model (`gemini-3.1-flash-lite`) has not been scored.
+
+### What the metrics are (and are not)
+- **Faithfulness** is the share of response claims that are supported by the context. A claim is supported when enough of its words appear in the context **and every number it contains also appears in the context**.
+- **Hallucination rate** is `1 - faithfulness`.
+- **Answer relevance** is word coverage of the query and the reference answer.
+- **Context precision** is only reported when the retrieved chunks are supplied. Otherwise it is shown as *not measured*.
+- These are **lexical heuristics inspired by Ragas and DeepEval**, not LLM-judged scores. They catch off-topic answers and wrong numbers, but not subtle factual errors, and the synonym map was hand-written for this dataset.
+- The golden context is given to the model directly, so **retrieval from the live APIs is not evaluated**.
+- A Promptfoo config (`eval/promptfooconfig.yaml`) calls a real Gemini model with model-graded assertions. It needs `GOOGLE_API_KEY` and has not been run for this README.
+
+### Run it locally
+
+```bash
+# Dataset check (no API key, no model)
+python3 eval/run_evals.py
+open eval/reports/index.html
+
+# Real model scores, Gemini (needs your own key; trial first with --limit 5)
+export GEMINI_API_KEY=...
+python3 eval/generate_responses.py --limit 5
+python3 eval/generate_responses.py
+python3 eval/run_evals.py --responses eval/data/model_responses.json
+
+# Real model scores, Ollama (local or remote; no key)
+python3 eval/generate_responses.py --provider ollama --model qwen3:14b --no-think \
+  --ollama-url http://localhost:11434 --output eval/data/model_responses_qwen3-14b.json
+python3 eval/run_evals.py --responses eval/data/model_responses_qwen3-14b.json \
+  --output-dir eval/reports/qwen3-14b
+
+# Dataset sanity checks inside the Flutter test suite
+flutter test test/services/rag_eval_suite_test.dart
 ```
 
 ---
 
 ## Testing
 
-ChatBud includes a comprehensive test suite with **159 automated tests**:
+ChatBud includes a comprehensive test suite with **164 automated tests**:
 
 ```bash
-# Run all unit and widget tests
+# Run all unit, widget, and eval-dataset tests
 flutter test
 
 # Run code static analysis

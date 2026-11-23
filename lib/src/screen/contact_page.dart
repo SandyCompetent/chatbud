@@ -690,7 +690,7 @@ class _ContactPageState extends State<ContactPage> {
             children: [
               TextButton.icon(
                 onPressed: () => _launchExternalUrl(
-                  'https://www.linkedin.com/in/sandy-competent/',
+                  'https://www.linkedin.com/in/sandeep-malviya-ml/',
                 ),
                 icon: const Icon(Icons.link_rounded, size: 18),
                 label: const Text('LinkedIn'),

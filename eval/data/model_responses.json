@@ -1,0 +1,311 @@
+{
+  "metadata": {
+    "model": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "generated_at": "2026-11-23T14:02:26+00:00",
+    "prompt_template_sha256": "ea7d486c9d2a147823881256a19b24361dfbc56c11da50bee40be6d1b37b5ea9",
+    "note": "Golden ground-truth context was supplied to the model. Measures generation faithfulness, not retrieval."
+  },
+  "responses": {
+    "eval_api_001": {
+      "response": "Based on the provided context, the current European Central Bank reference rate from Frankfurter API is 1 EUR = 1.0845 USD."
+    },
+    "eval_api_002": {
+      "response": "Based on the Frankfurter currency feed (European Central Bank daily rates), 1 GBP = 1.1680 EUR."
+    },
+    "eval_api_003": {
+      "response": "Hello! I am ChatBud AI. Based on the provided context, the current weather for London (51.5074 N, 0.1278 W) is partly cloudy with a temperature of 14.2°C, a relative humidity of 78%, and a wind speed of 12 km/h."
+    },
+    "eval_api_004": {
+      "response": "Based on the current Open-Meteo observation for Tokyo, the weather right now is a clear sky with a temperature of 19.5°C and a wind speed of 8 km/h."
+    },
+    "eval_api_005": {
+      "response": "Based on the provided grounding context, the authors of \"Attention Is All You Need\" are:\n\n* Ashish Vaswani\n* Noam Shazeer\n* Niki Parmar\n* Jakob Uszkoreit\n* Llion Jones\n* Aidan N. Gomez\n* Lukasz Kaiser\n* Illia Polosukhin"
+    },
+    "eval_api_006": {
+      "response": "Based on the provided context, the BERT paper was published in **2019** and has been indexed with over **85,000 academic citations**."
+    },
+    "eval_api_007": {
+      "response": "Based on the provided context, Flutter 3.24 (released on August 6, 2024) is currently supported, as active maintenance is supported until the next minor/major release cycle."
+    },
+    "eval_api_008": {
+      "response": "Hello! I am ChatBud AI. Based on the provided context, Node.js 18 (Hydrogen) Maintenance LTS ended on April 30, 2025."
+    },
+    "eval_api_009": {
+      "response": "Based on the provided context, Python 3.9 security support ends in October 2025."
+    },
+    "eval_api_010": {
+      "response": "Based on the provided context, CVE-2024-3094 is related to a malicious backdoor discovered in upstream XZ Utils compression versions 5.6.0 and 5.6.1, which impacted OpenSSH authentication in systemd-linked distributions and has a CVSS score of 10.0 Critical."
+    },
+    "eval_api_011": {
+      "response": "Based on the provided context, the Google OSV report for CVE-2021-44228 (the Apache Log4j JNDI remote code execution vulnerability, also known as Log4Shell) states the following:\n\n* **Affected versions:** `log4j-core` versions 2.0-beta9 through 2.14.1.\n* **Patched versions:** Versions 2.15.0 and 2.16.0."
+    },
+    "eval_api_012": {
+      "response": "Based on the provided Datamuse Lexicon API results:\n\n* **Synonyms for resilient:** robust, adaptable, hardy, flexible, tough.\n* **Strong associations (semantic triggers) for resilient:** strength, recovery, elasticity, bounce back."
+    },
+    "eval_api_013": {
+      "response": "Based on the provided context, the words that rhyme with \"inspire\" according to the Datamuse Rhyme API are:\n\n* aspire\n* desire\n* fire\n* admire\n* wire\n* conspire\n* tire\n* require"
+    },
+    "eval_api_014": {
+      "response": "Based on the provided context, the main public bank holidays in England for late spring are:\n\n* **Early May Bank Holiday** (first Monday of May)\n* **Spring Bank Holiday** (last Monday of May)"
+    },
+    "eval_api_015": {
+      "response": "Based on the provided context, New Year Day is celebrated on January 1. Additionally, when it falls on a weekend, substitute bank holidays apply on the following Monday."
+    },
+    "eval_api_016": {
+      "response": "Based on the provided context, the remote software roles currently listed on Arbeitnow are:\n\n* Senior Flutter Engineer\n* Backend Python Developer\n* React Frontend Specialist"
+    },
+    "eval_api_017": {
+      "response": "Based on the Open Food Facts database entry, per 100g, whole grain rolled oats contain approximately:\n\n* **Calories:** 389 kcal\n* **Protein:** 16.9g\n* **Carbohydrates:** 66.3g\n* **Dietary fiber:** 10.6g\n\nAdditionally, they have a **Nutri-Score A** and are **high in beta-glucan soluble fiber**."
+    },
+    "eval_api_018": {
+      "response": "Based on the provided context, the Wikipedia summary for Exeter is:\n\nExeter is a cathedral city in Devon, England, situated on the River Exe about 36 miles northeast of Plymouth. Historic attractions include Exeter Cathedral founded in 1050 and the Roman city walls."
+    },
+    "eval_api_019": {
+      "response": "Based on the provided context, Dart is an open-source, client-optimized programming language developed by Google and designed for multi-platform applications. It supports ahead-of-time (AOT) compilation to native code and just-in-time (JIT) compilation for fast developer reload."
+    },
+    "eval_api_020": {
+      "response": "According to Frankfurter, the exchange rate from USD to JPY is 1 USD = 154.20 JPY."
+    },
+    "eval_api_021": {
+      "response": "Based on the provided context, the temperature in Berlin is 11.8°C and the relative humidity is 65%."
+    },
+    "eval_api_022": {
+      "response": "Based on the provided context, the ResNet architecture (\"Deep Residual Learning for Image Recognition\") was published by Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. It has over 180,000 scholarly citations."
+    },
+    "eval_api_023": {
+      "response": "Hello! I am ChatBud AI. Based on the provided context, the end of life date for PostgreSQL 12 was November 14, 2024."
+    },
+    "eval_api_024": {
+      "response": "Based on the provided grounding context, CVE-2023-4863 is assigned a severity of CVSS 8.8 High."
+    },
+    "eval_api_025": {
+      "response": "Based on the provided Open Food Facts product record, the main ingredients in standard chocolate hazelnut spread are:\n\n* Sugar\n* Palm oil\n* Hazelnuts (13%)\n* Skimmed milk powder\n* Fat-reduced cocoa\n* Lecithin"
+    },
+    "eval_exe_001": {
+      "response": "Based on the provided context, the Forum Library on the Streatham Campus is open 24/7 during academic terms with card access."
+    },
+    "eval_exe_002": {
+      "response": "Based on the provided context, the Sanctuary study space is located on the ground floor below the Great Hall near the Northcote building."
+    },
+    "eval_exe_003": {
+      "response": "Hello! I am ChatBud AI. Based on the provided context, you can travel between Streatham Campus and St Luke's Campus using the following options:\n\n* **UNI bus:** Stagecoach D and H services run direct routes between the Streatham Campus Forum and St Luke's Campus Heavitree Road.\n* **Walking:** Takes approximately 30 minutes.\n* **Bicycle:** Takes approximately 12-15 minutes."
+    },
+    "eval_exe_004": {
+      "response": "Based on the provided context, the Exeter Students' Guild Advice team provides free, confidential, impartial support for:\n\n* Academic appeals\n* Housing disputes\n* Wellbeing"
+    },
+    "eval_exe_005": {
+      "response": "Based on the provided context, the Term 2 main assessment period at the University of Exeter runs across May and early June."
+    },
+    "eval_exe_006": {
+      "response": "Based on the provided context, the resources and features available at St Luke's Library (Haighton Building) include:\n\n* Specialization in Education, Sports Science, and Medical/Health sciences\n* Silent reading rooms\n* Loanable medical anatomical models\n* Printing facilities"
+    },
+    "eval_exe_007": {
+      "response": "Based on the provided context, you can access career appointments (such as 1-on-1 career coaching, mock interview practice, and internship placement matching) at **Career Zone**, which is located in the **Forum Seminar Wing on Streatham Campus** and **online via Handshake**. \n\n*(Note: The provided context does not specifically mention \"CV reviews,\" only 1-on-1 career coaching, mock interview practice, and internship placement matching offered at those locations.)*"
+    },
+    "eval_exe_008": {
+      "response": "Based on the provided context, students submit mitigation requests through the online Mitigation Portal before the deadline."
+    },
+    "eval_exe_009": {
+      "response": "Based on the provided context, the facilities located at the Streatham Campus (at the Russell Seal Fitness Centre on Stocker Road) include:\n\n* A 200-station gym\n* An indoor tennis centre\n* Squash courts\n* Synthetic floodlit pitches"
+    },
+    "eval_exe_010": {
+      "response": "Based on the provided context, the Student Health Centre is located at Reed Mews on Streatham Drive."
+    },
+    "eval_exe_011": {
+      "response": "Based on the provided context, the study rooms and computer labs at South Cloisters on St Luke's campus are open from 08:00 to 22:00 on weekdays."
+    },
+    "eval_exe_012": {
+      "response": "Based on the provided context, the Exeter Grand Challenges programme works as an annual interdisciplinary project week for first and second year undergraduates working on global problems, with themes that include the climate crisis, global health, cultural heritage, and food security."
+    },
+    "eval_exe_013": {
+      "response": "Based on the provided context, the SID (Student Information Desk) is the central service hub in the Forum for queries on tuition fees, visas, transcripts, and registration."
+    },
+    "eval_exe_014": {
+      "response": "Based on the provided context, students can find the Multi-Faith Chaplaincy and Quiet Room at the Old Library building and Mary Harris Memorial Chapel. These locations include open prayer rooms for all faiths, as well as dedicated ablution facilities."
+    },
+    "eval_exe_015": {
+      "response": "Based on the provided context, the computer clusters available 24/7 are the Forum Library IT clusters and the Laver Building computer suites."
+    },
+    "eval_exe_016": {
+      "response": "Based on the provided context, there is no information explaining how postgraduate research students can book desk space in the Research Commons."
+    },
+    "eval_exe_017": {
+      "response": "Based on the provided context, the food and dining options located in Devonshire House and the Forum are:\n\n* Pret A Manger\n* Com choir cafe\n* Guild Shop\n* Ram Bar\n* Terrace restaurant"
+    },
+    "eval_exe_018": {
+      "response": "Based on the provided context, Print Services at the Old Library provide thesis binding, wide-format poster printing, and booklet finishing. Additionally, standard follow-me printing is available at all networked multifunction printers."
+    },
+    "eval_exe_019": {
+      "response": "Hello! I am ChatBud AI. Based on the provided context, The Bill Douglas Cinema Museum is located in the Old Library on Prince of Wales Road, Streatham Campus."
+    },
+    "eval_exe_020": {
+      "response": "Based on the provided context, the accommodation villages mentioned are:\n\n* **East Park**, which provides modern en-suite residences at the northeast side of Streatham Campus.\n* **Birks Grange Village** (located on New North Road), which includes catered halls and self-catered flats. \n\n*(Note: According to the context, East Park and Birks Grange Village are themselves the accommodations/villages rather than locations that contain other villages.)*"
+    },
+    "eval_exe_021": {
+      "response": "Based on the provided context, the student society for computing and software engineering at Exeter is the **Exeter Computer Science Society (ExCS)**. It is affiliated with the Exeter Students' Guild and a BCS student chapter."
+    },
+    "eval_exe_022": {
+      "response": "Based on the provided context, Wellbeing Services provide cognitive behavioural therapy, psychological triage, and counsellor sessions. Urgent triage is also offered via the 24/7 Spectrum Life student helpline."
+    },
+    "eval_exe_023": {
+      "response": "Based on the provided context, Exeter Library Electronic Resources are accessed via Shibboleth Single Sign-On using your Exeter username and password."
+    },
+    "eval_exe_024": {
+      "response": "Based on the provided context, the Exeter Innovation Centre is located on Rennes Drive at the top of Streatham Campus."
+    },
+    "eval_exe_025": {
+      "response": "Based on the provided context, Streatham Campus is a registered botanic garden with over 10,000 trees, exotic conifers, and subtropical plantings."
+    },
+    "eval_mem_001": {
+      "response": "Based on your recorded memory, your preferred programming language for mobile development is Dart (along with Flutter as your primary mobile development stack)."
+    },
+    "eval_mem_002": {
+      "response": "Yes, you attended the University of Exeter, where you studied Computer Science."
+    },
+    "eval_mem_003": {
+      "response": "Based on your user memory, you chose Flutter Web with an HTML/CSS portfolio companion site for your web showcase."
+    },
+    "eval_mem_004": {
+      "response": "Based on your stored preferences, your preferred theme mode is Dark Mode (Soft Minimalist Slate palette)."
+    },
+    "eval_mem_005": {
+      "response": "Yes, your custom APILayer key is active for high-volume currency conversion, as validated in the PublicApiRagService storage."
+    },
+    "eval_mem_006": {
+      "response": "Based on the provided context, the cloud backend uses Cloud Firestore."
+    },
+    "eval_mem_007": {
+      "response": "Based on your AI Configuration preferences, you regularly like to switch between gemini-3.1-flash-lite, gemini-3.8-flash, and gemini-2.5-flash."
+    },
+    "eval_mem_008": {
+      "response": "Based on the provided grounding context, the main goal of the ChatBud repository is to serve as a non-commercial developer portfolio showcase demonstrating stateful multi-agent systems and Grounded RAG, strictly for educational and demonstration purposes."
+    },
+    "eval_mem_009": {
+      "response": "Based on your preferences, you prefer concise, direct explanations with actionable code snippets."
+    },
+    "eval_mem_010": {
+      "response": "Based on the provided grounding context, MemoryService uses a pure-Dart lexical term embedder with L2-normalized cosine similarity."
+    },
+    "eval_mem_011": {
+      "response": "Based on the provided context, your stance is that the project is strictly non-commercial and published as an open-source technical proof-of-concept."
+    },
+    "eval_mem_012": {
+      "response": "Based on the provided context, the CI/CD platform configured for ChatBud is GitHub Actions."
+    },
+    "eval_mem_013": {
+      "response": "Based on the provided grounding context, unit tests use `package:flutter_test` (along with mockito and http.testing)."
+    },
+    "eval_mem_014": {
+      "response": "Based on the provided grounding context, there are 16 curated presets available in the Persona Hub (plus custom persona creation)."
+    },
+    "eval_mem_015": {
+      "response": "Based on the provided context, desktop users send messages with the **Enter** key."
+    },
+    "eval_mem_016": {
+      "response": "Based on the provided grounding context, message bubbles are constrained to a maximum width of 680px for optimal readability."
+    },
+    "eval_mem_017": {
+      "response": "Based on the provided context, when you chat in Guest mode, it allows instant local chatting using SharedPreferences without creating an account. Additionally, Firestore sync is disabled until you log in."
+    },
+    "eval_mem_018": {
+      "response": "Based on your user memory, your primary role is an AI Engineer and Full-Stack Mobile Architect."
+    },
+    "eval_mem_019": {
+      "response": "Based on the provided context, ChatBud primarily uses `cupertino_icons` alongside standard Material Design icons."
+    },
+    "eval_mem_020": {
+      "response": "Based on the provided context, the cache TTL for retrieved public API contexts is 10 minutes (Duration(minutes: 10))."
+    },
+    "eval_mem_021": {
+      "response": "Based on the provided context, when APIs return no data, the system falls back to Wikipedia or persona foundational knowledge without failing, ensuring graceful degradation with zero crashes."
+    },
+    "eval_mem_022": {
+      "response": "Based on the provided context, the target threshold for Faithfulness in our eval suite is set to >= 0.85 (85%)."
+    },
+    "eval_mem_023": {
+      "response": "Based on the provided context, the acceptable maximum Hallucination Rate for ChatBud is 0.08 (or 8%), which must stay at or below this threshold."
+    },
+    "eval_mem_024": {
+      "response": "Based on the provided context, the package used for rendering and formatting markdown responses is `flutter_markdown_plus ^1.0.12`."
+    },
+    "eval_mem_025": {
+      "response": "Based on the provided context, memory vectors are persisted as JSON objects in SharedPreferences under the key `chatbud_user_memories_vault`."
+    },
+    "eval_per_001": {
+      "response": "Based on the provided context, to design a clean event-driven architecture in Flutter according to the Athena System Architect principles, you should:\n\n* Decouple the UI from the business logic using unidirectional data flow and Service Locator or Bloc/Provider.\n* Keep domain entities pure Dart without any Flutter SDK dependencies."
+    },
+    "eval_per_002": {
+      "response": "Based on the provided context, the top three threat vectors for client-side API keys are:\n\n1. Reverse engineering binaries via APK decompilation\n2. Man-in-the-middle network interception\n3. Source repository leaks"
+    },
+    "eval_per_003": {
+      "response": "Based on the Harper HR Coach framework, you should answer a \"tell me about a time you failed\" question by following these guidelines:\n\n* **Use the STAR method:** Structure your answer using **S**ituation, **T**ask, **A**ction, and **Result**.\n* **Focus on personal accountability:** Emphasize your own role and responsibility in the situation.\n* **Share constructive learnings:** Highlight what you learned from the experience and how you grew.\n* **Avoid blaming teammates:** Never blame others; instead, demonstrate mature self-reflection."
+    },
+    "eval_per_004": {
+      "response": "Based on the provided context, to quantify achievements on a software engineering resume, you should follow the Leo Career Coach rule by using Google's X-Y-Z formula: \n\n* **Accomplished [X] as measured by [Y], by doing [Z].**\n\nAdditionally, you should replace vague adjectives with measurable **latency, cost, or revenue improvements**."
+    },
+    "eval_per_005": {
+      "response": "Hello! I am ChatBud AI. Based on the provided context, Marcus Aurelius advises that when people are ungrateful or obstinate, you should remember that they are part of common nature and focus solely on your own virtue. You must remember that you cannot control others' actions, only your own response."
+    },
+    "eval_per_006": {
+      "response": "Based on the Nova Creative Strategist method, a technology startup should craft its brand narrative by:\n\n1. Anchoring the story on three key elements:\n   * **The villain** (the friction)\n   * **The hero** (the customer)\n   * **Your product** (the magical enabler)\n\n2. Building emotional resonance before listing any feature specifications."
+    },
+    "eval_per_007": {
+      "response": "Based on the provided grounding context, the recommended approach for handling state in large Flutter apps is to:\n\n* Choose predictable reactive state management, such as **ChangeNotifier**, **ValueNotifier**, or **BLoC**.\n* Avoid deep widget tree prop drilling.\n* Keep state close to where it is consumed."
+    },
+    "eval_per_008": {
+      "response": "Based on the provided context, the risks of unsafe deserialization (or arbitrary object injection) in REST APIs are:\n\n* **Remote Code Execution (RCE)**\n* **Denial of Service**"
+    },
+    "eval_per_009": {
+      "response": "Based on Harper HR advice, you should address a 6-month employment gap by being transparent and framing the gap around intentional personal development, family priorities, or technical upskilling. Additionally, you should show that your professional drive remained active."
+    },
+    "eval_per_010": {
+      "response": "Hello! I am ChatBud AI. Based on the provided context, the verbs that make bullet points stronger on a developer resume are:\n\n* Architected\n* Reduced\n* Accelerated\n* Spearheaded\n* Optimized\n* Engineered"
+    },
+    "eval_per_011": {
+      "response": "Based on the provided context, a leader can maintain mental equilibrium during system outages by applying Marcus Stoic wisdom:\n\n* **Differentiate control:** Separate what is within your direct control (your engineering decisions) from external chaos.\n* **Take methodical action:** Remember that panic resolves nothing, whereas methodical action restores order."
+    },
+    "eval_per_012": {
+      "response": "Based on the provided Nova Brand principle, a compelling technical hook makes an impact by leading with a counter-intuitive insight, a high-stakes metric, or a common pain point that disrupts conventional wisdom."
+    },
+    "eval_per_013": {
+      "response": "Based on the provided context, a Flutter mobile app should securely store JWT auth tokens by using `flutter_secure_storage` backed by iOS Keychain and Android Keystore with EncryptedSharedPreferences. You must never store sensitive credentials in plain SharedPreferences."
+    },
+    "eval_per_014": {
+      "response": "Based on the provided context, the best way to negotiate a salary offer is to:\n\n1. Express enthusiasm first.\n2. Maintain a collaborative and respectful tone.\n3. Base your counter-offer on market benchmarking data.\n4. Negotiate total compensation, including equity."
+    },
+    "eval_per_015": {
+      "response": "Based on the Leo Career Coach rule, since the length of experience was not specified in your query, whether or not to include a summary section depends on your years of experience:\n\n* **Under 5 years of experience:** You should either omit the summary entirely or keep it to 2 laser-focused lines highlighting your key domains and measurable impacts. \n* **5 or more years of experience:** The provided context does not specify a rule for this scenario."
+    },
+    "eval_per_016": {
+      "response": "Based on the provided context, to prevent SQL injection in modern full-stack systems, you should:\n\n* Use parameterized queries\n* Use prepared statements\n* Use ORMs with strict type binding\n* Never concatenate raw user input into SQL strings"
+    },
+    "eval_per_017": {
+      "response": "Based on the Athena Architecture rules, microservices should communicate to minimize runtime coupling by preferring asynchronous event publishing (using tools like Kafka, RabbitMQ, or Pub/Sub) for inter-service workflows over synchronous HTTP chains."
+    },
+    "eval_per_018": {
+      "response": "Based on the provided context, a candidate should ask questions that reveal team culture and technical autonomy, such as: \"What does success look like in the first 90 days?\""
+    },
+    "eval_per_019": {
+      "response": "Based on the provided context, when presenting open-source contributions on your portfolio, you should:\n\n* Link directly to merged pull requests.\n* List the technologies used.\n* Articulate the bug or feature resolved along with the user impact."
+    },
+    "eval_per_020": {
+      "response": "Hello! I am ChatBud AI. Based on the provided context, the dichotomy of control distinguishes between things that are up to us (such as opinions, intentions, and desires) and things that are not up to us (such as reputation, circumstances, and other people's choices)."
+    },
+    "eval_per_021": {
+      "response": "Based on the provided context, to build a cohesive developer brand on GitHub (following Nova Brand advice), you should write crisp READMEs that include:\n\n* Architectural diagrams\n* Live demo links\n* Comprehensive tests\n* Clean visual assets"
+    },
+    "eval_per_022": {
+      "response": "Based on the provided context, the key differences are:\n\n* **Monoliths** offer simpler deployments and unified transactions.\n* **Microservices** offer independent scalability at the cost of network complexity."
+    },
+    "eval_per_023": {
+      "response": "Based on the provided context, Content Security Policy (CSP) headers restrict origins for scripts, styles, and network connections to protect against cross-site scripting (XSS) attacks. \n\n*(Note: The provided context does not mention Flutter Web.)*"
+    },
+    "eval_per_024": {
+      "response": "Based on the provided context, an engineering manager (Harper HR leadership) should handle underperforming team members by:\n\n* Providing early, specific, and empathetic feedback\n* Identifying root blockers\n* Establishing clear 30-day recovery milestones"
+    },
+    "eval_per_025": {
+      "response": "Hello! I am ChatBud AI. Based on the provided context, the best way to describe architectural refactoring on a resume is to highlight the business problem (such as 5x faster build times or zero regression outages) rather than just focusing on the code rewrite."
+    }
+  }
+}

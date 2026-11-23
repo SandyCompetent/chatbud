@@ -1,0 +1,313 @@
+{
+  "metadata": {
+    "provider": "ollama",
+    "no_think": true,
+    "model": "qwen3:14b",
+    "temperature": 0.0,
+    "generated_at": "2026-11-23T14:27:46+00:00",
+    "prompt_template_sha256": "ea7d486c9d2a147823881256a19b24361dfbc56c11da50bee40be6d1b37b5ea9",
+    "note": "Golden ground-truth context was supplied to the model. Measures generation faithfulness, not retrieval."
+  },
+  "responses": {
+    "eval_api_001": {
+      "response": "The current ECB exchange rate from EUR to USD is 1 EUR = 1.0845 USD."
+    },
+    "eval_api_002": {
+      "response": "The exchange rate between GBP and EUR is 1 GBP = 1.1680 EUR, as per the European Central Bank daily rates."
+    },
+    "eval_api_003": {
+      "response": "The current weather forecast for London is as follows: Temperature is 14.2°C, relative humidity is 78%, wind speed is 12 km/h, and the sky is partly cloudy."
+    },
+    "eval_api_004": {
+      "response": "The current temperature in Tokyo is 19.5°C, with a wind speed of 8 km/h and clear skies. The hourly forecasts indicate stable temperatures over the next 12 hours."
+    },
+    "eval_api_005": {
+      "response": "The authors of the seminal Transformer paper \"Attention Is All You Need\" are Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin."
+    },
+    "eval_api_006": {
+      "response": "The BERT paper was published in 2019 and has over 85,000 academic citations in OpenAlex."
+    },
+    "eval_api_007": {
+      "response": "Flutter 3.24 is currently supported. It was released on August 6, 2024, and is under active maintenance until the next minor or major release cycle. Flutter follows a continuous release cadence, so it receives regular point patches as part of the stable channel."
+    },
+    "eval_api_008": {
+      "response": "Node.js 18 (Hydrogen) reached End of Life on April 30, 2025."
+    },
+    "eval_api_009": {
+      "response": "Python 3.9 is scheduled for End of Life in October 2025."
+    },
+    "eval_api_010": {
+      "response": "CVE-2024-3094 is related to a malicious backdoor discovered in upstream XZ Utils compression versions 5.6.0 and 5.6.1. It impacted OpenSSH authentication in systemd-linked distributions and has a CVSS score of 10.0, indicating it is a critical vulnerability."
+    },
+    "eval_api_011": {
+      "response": "The Google OSV report (GHSA-j2ge-4vd9-79pq) for the Log4Shell vulnerability (CVE-2021-44228) indicates that it affects log4j-core versions 2.0-beta9 through 2.14.1. The vulnerability was patched in versions 2.15.0 and 2.16.0."
+    },
+    "eval_api_012": {
+      "response": "According to Datamuse Lexicon API results:\n\n**Synonyms** for *resilient* include:  \n- robust  \n- adaptable  \n- hardy  \n- flexible  \n- tough  \n\n**Semantic triggers** associated with *resilient* include:  \n- strength  \n- recovery  \n- elasticity  \n- bounce back"
+    },
+    "eval_api_013": {
+      "response": "According to the lexical search results from the Datamuse Rhyme API, the words that rhyme with \"inspire\" include:\n\n- Aspire\n- Desire\n- Fire\n- Admire\n- Wire\n- Conspire\n- Tire\n- Require\n\nThese words have high lexical frequency scores in English corpora."
+    },
+    "eval_api_014": {
+      "response": "In late spring, the main public bank holiday in England is the Spring Bank Holiday, which is observed on the last Monday of May."
+    },
+    "eval_api_015": {
+      "response": "New Year Day is celebrated on January 1 in public holiday schedules across all ISO-3166 territory calendars. If January 1 falls on a weekend, the substitute bank holiday is observed on the following Monday."
+    },
+    "eval_api_016": {
+      "response": "Currently, the following remote software roles are listed on Arbeitnow:\n\n1. Senior Flutter Engineer  \n2. Backend Python Developer  \n3. React Frontend Specialist  \n\nEach listing includes visa sponsorship badges, remote location flags, and direct apply URLs."
+    },
+    "eval_api_017": {
+      "response": "Open Food Facts reports the following nutritional values for whole grain rolled oats per 100g: approximately 389 kcal, 16.9g protein, 66.3g carbohydrates, and 10.6g dietary fiber."
+    },
+    "eval_api_018": {
+      "response": "Exeter is a cathedral city in Devon, England, situated on the River Exe about 36 miles northeast of Plymouth. Historic attractions include Exeter Cathedral founded in 1050 and the Roman city walls."
+    },
+    "eval_api_019": {
+      "response": "According to the Wikipedia API summary, Dart is an open-source, client-optimized programming language developed by Google, designed for multi-platform applications. It supports ahead-of-time (AOT) compilation to native code and just-in-time (JIT) compilation for fast developer reload."
+    },
+    "eval_api_020": {
+      "response": "According to Frankfurter, the exchange rate from USD to JPY is 1 USD = 154.20 JPY."
+    },
+    "eval_api_021": {
+      "response": "The current temperature in Berlin is 11.8°C, and the relative humidity is 65%."
+    },
+    "eval_api_022": {
+      "response": "The ResNet architecture was published by Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. It has been indexed with over 180,000 scholarly citations."
+    },
+    "eval_api_023": {
+      "response": "The end of life date for PostgreSQL 12 is November 14, 2024."
+    },
+    "eval_api_024": {
+      "response": "The severity assigned to CVE-2023-4863 in libwebp by Google OSV is High, with a CVSS score of 8.8."
+    },
+    "eval_api_025": {
+      "response": "The main ingredients in standard chocolate hazelnut spread, according to Open Food Facts, are sugar, palm oil, hazelnuts (13%), skimmed milk powder, fat-reduced cocoa, and lecithin."
+    },
+    "eval_exe_001": {
+      "response": "The Forum Library on the Streatham Campus is open 24/7 during academic terms with card access."
+    },
+    "eval_exe_002": {
+      "response": "The Sanctuary study space is located on the ground floor below the Great Hall near the Northcote building on Streatham Campus."
+    },
+    "eval_exe_003": {
+      "response": "You can travel between Streatham Campus and St Luke's Campus by taking the UNI bus (Stagecoach D and H services), which runs direct routes between the two campuses. Alternatively, you can walk, which takes approximately 30 minutes, or cycle, which takes around 12-15 minutes."
+    },
+    "eval_exe_004": {
+      "response": "The Exeter Guild Advice team provides free, confidential, and impartial support for academic appeals, housing disputes, and wellbeing."
+    },
+    "eval_exe_005": {
+      "response": "Term 2 exams at the University of Exeter typically take place across May and early June."
+    },
+    "eval_exe_006": {
+      "response": "The St Luke's Haighton Library offers several resources, including silent reading rooms, loanable medical anatomical models, and printing facilities."
+    },
+    "eval_exe_007": {
+      "response": "You can access career appointments and CV reviews at Exeter through Career Zone, which is located in the Forum Seminar Wing on the Streatham Campus. Additionally, these services are available online via Handshake."
+    },
+    "eval_exe_008": {
+      "response": "To request an assessment extension or mitigation, students must submit their request through the online Mitigation Portal before the deadline. The request should be evidence-based and may cover situations such as unexpected illness, bereavement, or acute distress."
+    },
+    "eval_exe_009": {
+      "response": "The Streatham Sports Park facilities include a 200-station gym, indoor tennis centre, squash courts, and synthetic floodlit pitches. It is located on Stocker Road at the top of Streatham Campus."
+    },
+    "eval_exe_010": {
+      "response": "The Student Health Centre on Streatham Campus is located at Reed Mews on Streatham Drive."
+    },
+    "eval_exe_011": {
+      "response": "The Forum South Cloisters study space at St Luke's is open from 08:00 to 22:00 on weekdays."
+    },
+    "eval_exe_012": {
+      "response": "The Exeter Grand Challenges programme is an annual interdisciplinary project week for first and second year undergraduates, where they work on global problems. Themes covered include the climate crisis, global health, cultural heritage, and food security."
+    },
+    "eval_exe_013": {
+      "response": "The University of Exeter Student Information Desk (SID) is the central service hub in the Forum for queries on tuition fees, visas, transcripts, and registration."
+    },
+    "eval_exe_014": {
+      "response": "Students can find quiet reflection or prayer rooms on the Streatham campus at the Old Library building and Mary Harris Memorial Chapel. These locations include dedicated ablution facilities and open prayer rooms for all faiths."
+    },
+    "eval_exe_015": {
+      "response": "The computer clusters available 24/7 on Streatham Campus are the Forum Library IT clusters and the Laver Building computer suites."
+    },
+    "eval_exe_016": {
+      "response": "The provided context does not mention how postgraduate research students can book desk space in the Research Commons."
+    },
+    "eval_exe_017": {
+      "response": "Devonshire House and the Forum host several food and dining options, including Pret A Manger, Com Choir Cafe, Guild Shop, Ram Bar, and Terrace Restaurant. Dietary options available include certified halal, vegan, and gluten-free selections."
+    },
+    "eval_exe_018": {
+      "response": "Print Services at the Old Library provide thesis binding, wide-format poster printing, and booklet finishing. These services are available for dissertation submission."
+    },
+    "eval_exe_019": {
+      "response": "The Bill Douglas Cinema Museum is located in the Old Library on Prince of Wales Road, Streatham Campus."
+    },
+    "eval_exe_020": {
+      "response": "East Park provides modern en-suite residences, and Birks Grange Village on New North Road includes catered halls and self-catered flats."
+    },
+    "eval_exe_021": {
+      "response": "The Exeter Computer Science Society (ExCS) is a student society for computing and software engineering at Exeter. It hosts events such as hackathons, coding workshops, game jams, and tech talk evenings. It is affiliated with the Exeter Students' Guild and the BCS student chapter."
+    },
+    "eval_exe_022": {
+      "response": "Exeter Wellbeing Services provide cognitive behavioural therapy, psychological triage, and counsellor sessions, both in Reed Hall and online. Additionally, urgent triage is available via the 24/7 Spectrum Life student helpline."
+    },
+    "eval_exe_023": {
+      "response": "Students access digital library resources off campus via Shibboleth Single Sign-On using their Exeter username and password. This provides access to resources such as JSTOR, ScienceDirect, IEEE Xplore, and Web of Science."
+    },
+    "eval_exe_024": {
+      "response": "The Innovation Centre is located on Rennes Drive at the top of Streatham Campus."
+    },
+    "eval_exe_025": {
+      "response": "The Streatham Campus is a registered botanic garden with over 10,000 trees, exotic conifers, and subtropical plantings. Guided horticulture and tree walks are held by the Grounds team throughout the year."
+    },
+    "eval_mem_001": {
+      "response": "Based on your recorded episodic memory, your preferred programming language for mobile development is Dart, as it is part of your primary mobile development stack along with Flutter."
+    },
+    "eval_mem_002": {
+      "response": "Yes, I remember that you attended the University of Exeter, where you studied Computer Science."
+    },
+    "eval_mem_003": {
+      "response": "You chose Flutter Web for your web showcase."
+    },
+    "eval_mem_004": {
+      "response": "Your preferred theme mode in ChatBud is Dark Mode with the Soft Minimalist Slate palette."
+    },
+    "eval_mem_005": {
+      "response": "Yes, you have a Custom APILayer key configured for high-volume currency conversion, as indicated in the provided grounding context."
+    },
+    "eval_mem_006": {
+      "response": "We use Cloud Firestore for the cloud backend."
+    },
+    "eval_mem_007": {
+      "response": "You like to switch between gemini-3.1-flash-lite, gemini-3.8-flash, and gemini-2.5-flash."
+    },
+    "eval_mem_008": {
+      "response": "The main goal of the ChatBud repository is to serve as a non-commercial developer portfolio showcase, demonstrating stateful multi-agent systems and Grounded RAG."
+    },
+    "eval_mem_009": {
+      "response": "You prefer concise, direct explanations with actionable code snippets."
+    },
+    "eval_mem_010": {
+      "response": "MemoryService uses a pure-Dart lexical term embedder with L2-normalized cosine similarity as the vector embedding technique."
+    },
+    "eval_mem_011": {
+      "response": "The project is strictly non-commercial and published as an open-source technical proof-of-concept. Therefore, commercial monetization of this repo is not permitted."
+    },
+    "eval_mem_012": {
+      "response": "The CI/CD platform configured for ChatBud is GitHub Actions."
+    },
+    "eval_mem_013": {
+      "response": "The testing framework used for Dart unit tests is package:flutter_test."
+    },
+    "eval_mem_014": {
+      "response": "The Persona Hub hosts 16 curated presets."
+    },
+    "eval_mem_015": {
+      "response": "The keybinding that sends messages on desktop is Enter."
+    },
+    "eval_mem_016": {
+      "response": "The maximum message bubble width on desktop screens is 680px."
+    },
+    "eval_mem_017": {
+      "response": "When you chat in Zero-Login Guest Mode, you can instantly chat locally using SharedPreferences without creating an account. However, Firestore sync is disabled until you log in."
+    },
+    "eval_mem_018": {
+      "response": "Based on the provided grounding context, your primary role in software development is that of an AI Engineer and Full-Stack Mobile Architect, specializing in Flutter, multi-agent frameworks, and RAG systems."
+    },
+    "eval_mem_019": {
+      "response": "ChatBud primarily uses **cupertino_icons** alongside standard **Material Design icons**."
+    },
+    "eval_mem_020": {
+      "response": "The cache TTL (Time to Live) for retrieved public API contexts is 10 minutes."
+    },
+    "eval_mem_021": {
+      "response": "When public APIs return empty results, ungrounded questions are handled through a RAG fallback mechanism. The system gracefully degrades by using Wikipedia or persona foundational knowledge to provide an answer, ensuring there are no crashes."
+    },
+    "eval_mem_022": {
+      "response": "The target threshold for Faithfulness in our eval suite is set to >= 0.85 (85%)."
+    },
+    "eval_mem_023": {
+      "response": "The acceptable maximum Hallucination Rate for ChatBud is 0.08 (8%)."
+    },
+    "eval_mem_024": {
+      "response": "The package that formats markdown responses in ChatBud is **flutter_markdown_plus** version **1.0.12**."
+    },
+    "eval_mem_025": {
+      "response": "Memory vectors are saved on the device as JSON objects in SharedPreferences, under the key \"chatbud_user_memories_vault\"."
+    },
+    "eval_per_001": {
+      "response": "To design a clean event-driven architecture in Flutter, follow these principles based on the Athena System Architect guideline:\n\n1. **Decouple UI from Business Logic**: Use a unidirectional data flow pattern, such as the Bloc or Provider pattern, to ensure that the UI does not directly manipulate business logic. Instead, the UI should emit events that are handled by business logic layers.\n\n2. **Event-Driven Communication**: Implement an event-driven architecture where components communicate through events. Events can be dispatched from one part of the application and listened to by other parts, ensuring loose coupling and maintainability.\n\n3. **Use Service Locator or Bloc/Provider**: Utilize a Service Locator or Bloc/Provider to manage the creation and injection of event handlers and business logic components. This helps in maintaining a clean separation of concerns and makes the application more testable.\n\n4. **Pure Dart Domain Entities**: Ensure that domain entities remain pure Dart objects without any Flutter SDK dependencies. This allows for better testability and reusability across different platforms if needed.\n\nBy following these principles, you can create a clean, maintainable, and scalable event-driven architecture in Flutter."
+    },
+    "eval_per_002": {
+      "response": "The top three threat vectors for client-side API keys, based on the provided context, are:\n\n1. **Reverse engineering binaries via APK decompilation** – This allows attackers to extract API keys directly from the compiled application.\n2. **Man-in-the-middle network interception** – This can expose API keys during transmission if not properly secured.\n3. **Source repository leaks** – API keys may be inadvertently committed to version control systems and exposed publicly."
+    },
+    "eval_per_003": {
+      "response": "Using the STAR method and focusing on personal accountability and constructive learning, here's how you could answer:\n\n**Situation:** During a previous job interview for a project management role, I was asked to describe a time when I faced a challenge in a team setting.\n\n**Task:** I was expected to demonstrate my problem-solving skills and ability to work effectively with others.\n\n**Action:** I shared an experience where a project was delayed due to miscommunication within the team. However, I realized that I had not clearly communicated my expectations to the team members at the beginning of the project, which contributed to the confusion.\n\n**Result:** While the project was eventually completed, it was later than expected. I took full responsibility for my part in the miscommunication and learned the importance of setting clear expectations and maintaining open lines of communication from the start. Since then, I have made a conscious effort to improve my communication skills and ensure that all team members are aligned from the beginning of any project. This experience taught me the value of proactive communication and personal accountability in ensuring successful outcomes."
+    },
+    "eval_per_004": {
+      "response": "To quantify achievements on a software engineering resume, use Google's X-Y-Z formula: **Accomplished [X] as measured by [Y], by doing [Z]**. Replace vague adjectives with measurable improvements in **latency**, **cost**, or **revenue**.\n\nFor example:\n- Instead of writing \"Improved system performance,\" write: \"Accomplished a 40% reduction in latency as measured by user response time, by optimizing database queries and implementing caching mechanisms.\""
+    },
+    "eval_per_005": {
+      "response": "Marcus Aurelius advises approaching difficult colleagues by remembering that they are part of common nature and focusing solely on your own virtue. You cannot control their actions, only your own response."
+    },
+    "eval_per_006": {
+      "response": "A technology startup should craft its brand narrative by anchoring the story on three key elements: the villain (the friction or problem the customer faces), the hero (the customer), and the product as the magical enabler that resolves the problem. The narrative should first build emotional resonance by highlighting the challenges the customer experiences, making the audience feel understood and connected. Only after establishing this emotional connection should the startup introduce the product's features and specifications, positioning them as the solution that transforms the customer's experience."
+    },
+    "eval_per_007": {
+      "response": "The recommended approach for handling state in large Flutter apps is to use predictable reactive state management solutions such as ChangeNotifier, ValueNotifier, or BLoC. It is also important to avoid deep widget tree prop drilling and to keep state close to where it is consumed."
+    },
+    "eval_per_008": {
+      "response": "Using unsafe deserialization in REST APIs can lead to risks such as remote code execution (RCE) and denial of service. It is important to enforce strict schema validation and avoid generic deserializers to mitigate these risks."
+    },
+    "eval_per_009": {
+      "response": "You should address the 6-month employment gap by being transparent and framing it around intentional personal development, family priorities, or technical upskilling. Emphasize that your professional drive remained active during this time, perhaps by highlighting any relevant skills you developed, courses you took, or personal projects you worked on. This approach shows that the gap was intentional and that you continued to grow professionally."
+    },
+    "eval_per_010": {
+      "response": "Strong action verbs that make bullet points stronger on a developer resume include: Architected, Reduced, Accelerated, Spearheaded, Optimized, and Engineered."
+    },
+    "eval_per_011": {
+      "response": "A leader can maintain mental equilibrium during system outages by focusing on what is within their direct control—such as their engineering decisions and the actions of their team—while accepting that external factors are beyond their influence. By avoiding panic and instead taking methodical action, a leader can restore order and guide their team effectively through the crisis."
+    },
+    "eval_per_012": {
+      "response": "A compelling technical hook in content marketing is one that starts with a high-stakes metric or a counter-intuitive insight—such as \"78% of engineers abandon tools that don’t cut development time by at least 30% within the first month\"—because it immediately grabs attention and challenges conventional thinking, making the audience sit up and take notice."
+    },
+    "eval_per_013": {
+      "response": "A Flutter mobile app should securely store JWT auth tokens by using flutter_secure_storage backed by iOS Keychain and Android Keystore with EncryptedSharedPreferences. This ensures that sensitive data like JWT tokens are not stored in plain SharedPreferences."
+    },
+    "eval_per_014": {
+      "response": "The best way to negotiate a salary offer after receiving a job offer is to first express enthusiasm for the role and the company. Then, base your counter-offer on market benchmarking data to support your requested compensation. Finally, negotiate total compensation, including equity if applicable, while maintaining a collaborative and respectful tone throughout the discussion."
+    },
+    "eval_per_015": {
+      "response": "Yes, you can include a summary section, but it should be kept to 2 laser-focused lines highlighting key domains and measurable impacts."
+    },
+    "eval_per_016": {
+      "response": "To prevent SQL injection in modern full-stack systems, you should use parameterized queries, prepared statements, and ORMs with strict type binding. Never concatenate raw user input into SQL strings."
+    },
+    "eval_per_017": {
+      "response": "Microservices should communicate using asynchronous event publishing mechanisms such as Kafka, RabbitMQ, or Pub/Sub to minimize runtime coupling. This approach, as outlined in the Athena Architecture rule, helps decouple services and improves system resilience and scalability."
+    },
+    "eval_per_018": {
+      "response": "A candidate should ask questions that reveal team culture and technical autonomy, such as \"What does success look like in the first 90 days?\""
+    },
+    "eval_per_019": {
+      "response": "To effectively present open-source contributions on your portfolio, follow these guidelines:\n\n1. **Link Directly to Merged Pull Requests**: Include direct links to the pull requests you've contributed to, ensuring they are merged and publicly accessible. This provides tangible evidence of your contributions.\n\n2. **List Technologies Used**: Clearly state the technologies, programming languages, and tools involved in your contributions. This helps potential employers or collaborators understand your technical skills.\n\n3. **Articulate the Bug or Feature Resolved**: Describe the specific bug you fixed or the feature you added. Explain the problem and how your contribution resolved it.\n\n4. **Highlight User Impact**: Emphasize the impact of your contribution. For example, how it improved performance, fixed a critical issue, or enhanced user experience.\n\nBy following these steps, you can effectively showcase your open-source contributions and demonstrate your skills and impact."
+    },
+    "eval_per_020": {
+      "response": "Epictetus's core dichotomy of control is the distinction between what is within our control (such as our opinions, intentions, and desires) and what is not (such as reputation, external circumstances, and the choices of others)."
+    },
+    "eval_per_021": {
+      "response": "To build a cohesive developer brand on GitHub, focus on the following key elements:\n\n1. **Write Crisp READMEs**: Ensure your README files are clear, concise, and informative. They should explain the purpose of your project, how to use it, and any key features or dependencies.\n\n2. **Include Architectural Diagrams**: Use diagrams to visually explain the structure and components of your project. This helps others understand your work more quickly and effectively.\n\n3. **Add Live Demo Links**: Provide links to live demos or interactive examples of your project. This allows users to see your work in action and can significantly improve engagement.\n\n4. **Implement Comprehensive Tests**: Write thorough tests to ensure your code is reliable and maintainable. This demonstrates your commitment to quality and helps others trust your work.\n\n5. **Use Clean Visual Assets**: Include high-quality images, icons, or other visual elements that enhance the overall look and feel of your repository. This contributes to a professional and polished appearance.\n\nBy following these practices, you can create a strong and cohesive developer brand on GitHub that stands out and attracts attention."
+    },
+    "eval_per_022": {
+      "response": "The key differences between monolithic and microservice architectures are as follows:\n\n- **Deployment Complexity**: Monolithic architectures offer simpler deployments, as the entire application is deployed as a single unit. In contrast, microservice architectures require managing multiple services, which can increase deployment complexity.\n\n- **Scalability**: Microservices allow for independent scalability of individual services, enabling more efficient resource utilization. Monolithic architectures, on the other hand, require scaling the entire application, even if only a part of it needs more resources.\n\n- **Transaction Management**: Monolithic systems provide unified transactions, making it easier to manage data consistency across the application. Microservices, however, introduce challenges in maintaining transaction consistency across distributed services, often requiring additional mechanisms like distributed transactions or event sourcing."
+    },
+    "eval_per_023": {
+      "response": "Content Security Policy (CSP) is a security mechanism that restricts the origins from which scripts, styles, and other resources can be loaded in a web application. It helps protect against cross-site scripting (XSS) attacks by ensuring that only trusted sources are allowed to execute code or load resources on the page.\n\nFor Flutter Web, CSP is vital because it enhances the security of the application by mitigating the risk of XSS attacks, which can be particularly dangerous in single-page applications like those built with Flutter. By enforcing strict origin policies, CSP helps prevent malicious scripts from being injected and executed in the context of the application, thereby safeguarding user data and maintaining the integrity of the application."
+    },
+    "eval_per_024": {
+      "response": "An engineering manager should handle underperforming team members by providing early, specific, and empathetic feedback, identifying the root blockers affecting performance, and establishing clear 30-day recovery milestones to help the team member improve and succeed."
+    },
+    "eval_per_025": {
+      "response": "The best way to describe architectural refactoring on a resume is to highlight the business impact, such as achieving 5x faster build times or eliminating regression outages, rather than focusing solely on the code rewrite."
+    }
+  }
+}

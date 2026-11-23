@@ -84,3 +84,10 @@ IMPROVEMENT_PLAN.md
 !.env.example
 *.local.dart
 upwork/
+
+# Secrets and credentials (security audit, Task 10): never commit these
+*.pem
+*.key
+*.jks
+*.keystore
+key.properties

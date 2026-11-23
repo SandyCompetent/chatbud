@@ -5,7 +5,7 @@
 [![Flutter](https://img.shields.io/badge/Flutter-3.33+-02569B?logo=flutter&style=flat-square)](https://flutter.dev)
 [![Firebase AI](https://img.shields.io/badge/Firebase%20AI-Gemini%202.5%20%2F%202.0-FFA000?logo=firebase&style=flat-square)](https://firebase.google.com/docs)
 [![Grounded RAG](https://img.shields.io/badge/RAG-Public%20APIs%20%2B%20Citations-10B981?style=flat-square)](#grounded-rag-engine)
-[![Tests](https://img.shields.io/badge/Tests-164%20Passed-10B981?style=flat-square)](#testing)
+[![CI](https://github.com/SandyCompetent/chatbud/actions/workflows/ci.yml/badge.svg)](https://github.com/SandyCompetent/chatbud/actions/workflows/ci.yml)
 [![Eval Dataset](https://img.shields.io/badge/Golden%20Eval%20Dataset-100%20queries-4F46E5?style=flat-square)](#-evaluation-suite--golden-dataset)
 [![License: MIT](https://img.shields.io/badge/License-MIT-4F46E5.svg?style=flat-square)](LICENSE)
 
